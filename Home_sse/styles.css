@@ -1,9 +1,13 @@
+:root {
+  --color-bloque-login: rgba(242, 243, 244, 0.92156862745098);
+  --title-login: #000000;
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
 }
@@ -16,8 +20,8 @@ header {
   width: 1024px;
   height: 81px;
   text-align: center;
-  background-color: rgba(242, 243, 244, 0.92156862745098);
-  margin: auto;
+  background-color: var(--color-bloque-login);
+  margin: 0 auto;
 }
 
 header img {
@@ -135,15 +139,17 @@ header img {
   font-weight: 400;
   font-style: normal;
   font-size: 3.5rem;
-  color: #000000;
+  color: var(--title-login);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .main--section {
- display: flex;
- flex-direction: row;
- justify-content: center;
- height: 404px;
- align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 404px;
+  align-items: center;
 }
 
 .main-body {
@@ -153,13 +159,13 @@ header img {
   width: 512px;
   height: 404px;
   text-align: center;
-  background-color: rgba(242, 243, 244, 0.92156862745098);
+  background-color: var(--color-bloque-login);
   margin: none;
 }
 
 .img-main {
   position: relative;
-  align-self:flex-start;
+  align-self: flex-start;
   width: 512px;
   height: 404px;
   margin: none;
@@ -173,8 +179,6 @@ footer {
   width: 1024px;
   height: 82px;
   text-align: center;
-  background-color: rgba(242, 243, 244, 0.92156862745098);
+  background-color: var(--color-bloque-login);
   margin: 10px auto auto auto;
 }
-
-
