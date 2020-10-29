@@ -1,6 +1,51 @@
 :root {
+  /*LOGIN*/
   --color-bloque-login: rgba(242, 243, 244, 0.92156862745098);
   --title-login: #000000;
+  /*Colores UNCOS*/
+  --azul-UNCOS: #0081c9;
+  --cafe-UNCOS: #72635a;
+  --rojo-UNCOS: #d8222a;
+  --amarillo-UNCOS: #f4de1e;
+  --verde-UNCOS: #009d49;
+  --azul-variante-UNCOS: #005c82;
+  --cafe-variante-UNCOS: #f5cfb2;
+  --rojo-variante-UNCOS: #dd5f15;
+  --verde-variante-UNCOS: #a3d783;
+  -verde2-variante-uncos: #7a9c49;
+  /*Colores Nova*/
+  --negro-NOVA: #1a1919;
+  --verde-NOVA: #267346;
+  --cafe-NOVA: #b0841f;
+  --azul-NOVA: #446561;
+  --naranja-NOVA: #e7792b;
+  --rojo-NOVA: #e0592a;
+  --gris-NOVA: #cbcccb;
+  --cafe-variante-NOVA: #b0841f;
+  --naranja-variante-NOVA: #edaa00;
+  --amarillo-variante-NOVA: #f7cf3e;
+  --verde-variante-NOVA: #00594e;
+  /*Colores UNICHA*/
+  --verde-UNICHA: #009949;
+  --rojo-UNICHA: #d8222a;
+  --negro-UNICHA: #1a1919;
+  --verde-variante-UNICHA: #007935;
+  --verde2-variante-UNICHA: #255d38;
+  --rojo-variante-UNICHA: #d8272e;
+  -rojo2-variante-unicha: #d00b2c;
+  --negro-variante-UNICHA: #3e3934;
+  --gris-variante-UNICHA: #535249;
+  /*Colores UTM*/
+  --rojo-UTM: #cc0033;
+  --cafe-UTM: #660000;
+  --verde-UTM: #666633;
+  --amarillo-UTM: #cccc66;
+  --azul-variante-UTM: #0081c9;
+  --azul2-variante-UTM: #005c82;
+  --cafe-variante-UTM: #f5cfb2;
+  --naranja-variante-UTM: #dd5f15;
+  --verde-variante-UTM: #a3d783;
+  --verde2-variante-UTM: #7a9c49;
 }
 html {
   font-size: 62.5%;
