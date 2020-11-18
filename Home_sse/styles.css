@@ -2,6 +2,7 @@
   /*LOGIN*/
   --color-bloque-login: rgba(242, 243, 244, 0.92156862745098);
   --title-login: #000000;
+  --texto-opc: #071E33;
   /*Colores UNCOS*/
   --azul-UNCOS: #0081c9;
   --cafe-UNCOS: #72635a;
@@ -217,16 +218,119 @@ header img {
   margin: none;
 }
 
+.opc--find{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 296px;
+  height: 32px;
+  color: var(--texto-opc);
+  background-color: var(--color-bloque-login);
+  margin: 10px auto -9px auto;
+  text-align: center;
+  font-family: 'Raleway-Regular', 'Raleway', sans-serif;;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.arrow {
+  margin-left: 4px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 footer {
   position: relative;
   display: flex;
-  align-self: flex-end;
-  justify-content: center;
+  justify-content: end;
+  flex-direction: column;
   width: 1024px;
   height: 82px;
   text-align: center;
   background-color: var(--color-bloque-login);
   margin: 10px auto auto auto;
+}
+
+.footer--div1-img{
+  border-width: 0px;
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  width: 132px;
+  height: 15px;
+  display: flex;
+}
+
+.footer--div2-img{
+  border-width: 0px;
+  position: absolute;
+  left: 940px;
+  top: 5px;
+  width: 132px;
+  height: 15px;
+  display: flex;
+}
+
+.footer--titleT1{
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  height: 20px;
+  margin-left: 125px;
+  justify-content: space-around;
+}
+
+.footer--titleT2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 800px;
+  height: 20px;
+  margin-left: 85px;
+  justify-content: space-around;
+}
+
+.footer--titleT3{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 880px;
+  height: 20px;
+  margin-left: 85px;
+  justify-content: space-around;
+}
+
+.footer--titleT4{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 800px;
+  height: 20px;
+  margin-left: 153px;
+}
+
+.footer--title1{
+  display: flex;
+}
+
+.footer--title2{
+  display: flex;
+}
+
+.footer--title3{
+  display: flex;
+}
+
+.footer--title4{
+  display: flex;
+
 }
 
 .main-container img {
