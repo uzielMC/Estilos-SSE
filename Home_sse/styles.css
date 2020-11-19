@@ -222,15 +222,15 @@ header img {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  width: 296px;
-  height: 32px;
+  width: 1024px;
+  height: 90px;
   color: var(--texto-opc);
   background-color: var(--color-bloque-login);
   margin: 10px auto -9px auto;
   text-align: center;
   font-family: "Raleway-Regular", "Raleway", sans-serif;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;;
 }
 
 .arrow {
@@ -378,4 +378,7 @@ footer {
   color: #ffffff;
   text-align: center;
   line-height: normal;
+}
+
+.dropdown-menu {
 }

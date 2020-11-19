@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   </head>
   <body>
     <header>
@@ -71,16 +72,26 @@
              <br>
               <input type="email" id="fname" name="fname" value="Correo electrónico"><br><br>
               <input type="email" id="fname" name="fname" value="Contraseña"><br><br>
-              <button type="submit">Entrarrrrrr</button>
+              <button type="submit">Entrar</button>
             </form>
           
         </div>
       </section>
       <section></section>
       <section></section>
-      <div class="opc--find">
-       <p>Aquí encontrarás <i class="arrow down"></i></p>
+      <button id="displayNone" class="opc--find">diplay: none / block</button>
+      <div id="hide-me" class="opc--find">
+       <ul>
+         Ofertas laborales
+       </ul>
+       <ul>
+        Directorio de empresas
+      </ul>
+      <ul>
+        Ranking de las mejores empresas
+      </ul>
       </div>
+      
     </main>
     <footer>
         <div class="footer--div1-img">
@@ -125,5 +136,20 @@
           <img src="./assets/img/u14.png"  width="48" height="68" alt="" />
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script>
+   $('#displayNone').click(function(e) {
+  
+  // Resetear, por si acaso has estado jugando con la otra propiedad
+  $('#hide-me').css('visibility', 'visible');
+  
+  if( $('#hide-me').is(":visible") ) {
+    $('#hide-me').css('display', 'none'); 
+  } else {
+    $('#hide-me').css('display', 'block');
+  }
+});
+ </script>
   </body>
 </html>
