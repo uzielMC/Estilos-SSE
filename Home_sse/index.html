@@ -79,21 +79,26 @@
       </section>
       <section></section>
       <section></section>
-      <button id="displayNone" class="opc--find">diplay: none / block</button>
-      <div id="hide-me" class="opc--find">
-       <ul>
-         Ofertas laborales
-       </ul>
-       <ul>
-        Directorio de empresas
-      </ul>
-      <ul>
-        Ranking de las mejores empresas
-      </ul>
+      <div>
+          <button id="displayNone" class="opc--find"> 
+            <p class="tex">Aquí encontrarás</p> 
+          </button>
+        <div id="hide-me" class="opc--find-hide">
+          <div class="opc--find-principal"> 
+              <ul>
+                Ofertas laborales
+              </ul>
+              <ul>
+                Directorio de empresas
+              </ul>
+              <ul>
+                Ranking de las mejores empresas
+              </ul>
+          </div>
+        </div>
       </div>
-      
     </main>
-    <footer>
+   <footer>
         <div class="footer--div1-img">
           <img src="./assets/img/u26.png"  width="132" height="39" alt="" />
         </div>
@@ -101,18 +106,18 @@
         <div class= "footer--title1">
           <p>Sobre SUNEO</p>
         </div>
-        <div class= "footer--title2">
+        <div class= "footer--title1">
           <p>Aviso de Privacidad</p>
         </div>
-        <div class= "footer--title3">
+        <div class= "footer--title1">
           <p>Empresas</p> 
         </div>
-        <div class= "footer--title4">
+        <div class= "footer--title1">
           <p>Ayuda</p>
         </div>
       </div>
       <div class ="footer--titleT2">
-        <div class= "footer--title1">
+        <div class= "footer--title2">
           <p>Coordinación de Vinculación de Alumnos y Egresados UTM</p>
         </div>
         <div class= "footer--title2">
@@ -120,7 +125,7 @@
         </div>
       </div>
       <div class ="footer--titleT3">
-        <div class= "footer--title1">
+        <div class= "footer--title2">
           <p>De Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 19:00 hrs</p>
         </div>
         <div class= "footer--title2">
@@ -128,7 +133,7 @@
         </div>
       </div>
             <div class ="footer--titleT4">
-        <div class= "footer--title1">
+        <div class= "footer--title2">
           <p>SUNEO, Oaxaca, México. 2020</p>
         </div>
       </div>
@@ -136,20 +141,19 @@
           <img src="./assets/img/u14.png"  width="48" height="68" alt="" />
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
- <script>
-   $('#displayNone').click(function(e) {
-  
-  // Resetear, por si acaso has estado jugando con la otra propiedad
-  $('#hide-me').css('visibility', 'visible');
-  
-  if( $('#hide-me').is(":visible") ) {
-    $('#hide-me').css('display', 'none'); 
-  } else {
-    $('#hide-me').css('display', 'block');
-  }
-});
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+      $('#displayNone').click(function(e) {
+        // Resetear, por si acaso has estado jugando con la otra propiedad
+        $('#hide-me').css('visibility', 'none');
+        
+        if( $('#hide-me').is(":visible") ) {
+          $('#hide-me').css('display', 'none'); 
+        } else {
+          $('#hide-me').css('display', 'block');
+        }
+      });
  </script>
   </body>
 </html>

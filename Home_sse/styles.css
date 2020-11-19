@@ -1,8 +1,9 @@
 :root {
   /*LOGIN*/
-  --color-bloque-login: rgba(242, 243, 244, 0.92156862745098);
+  --color-bloque-login:  #F3F4F4;
   --title-login: #000000;
-  --texto-opc: #071e33;
+  --texto-opc1: #D8D8D8;
+  --texto-opc2: #071E33;
   /*Colores UNCOS*/
   --azul-UNCOS: #0081c9;
   --cafe-UNCOS: #72635a;
@@ -218,27 +219,68 @@ header img {
   margin: none;
 }
 
+
+.tex{
+  display: flex;
+  margin-left: 90px;
+  margin-top: 5px;
+  width: auto;
+  height: auto;
+}
+
+.opc--find-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 1.3rem;
+ }
+
 .opc--find {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  width: 296px;
+  height: 33px;
+  margin: 10px auto -9px auto;
+  text-align: center;
+  align-self: center;
+  font-family: "Raleway-Regular", "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  background-color:transparent;
+  color: var(--texto-opc2);
+  background-color: var(--color-bloque-login);
+  border: 0px solid;
+}
+
+.opc--find:focus {
+  outline:none;
+}
+
+.opc--find-hide {
+  display: flex;
   flex-direction: column;
+  margin-top: 0px;
   width: 1024px;
-  height: 90px;
-  color: var(--texto-opc);
+  height: auto;
+  color: var(--texto-opc1);
   background-color: var(--color-bloque-login);
   margin: 10px auto -9px auto;
   text-align: center;
+  align-self: center;
   font-family: "Raleway-Regular", "Raleway", sans-serif;
   font-style: normal;
-  font-size: 1.3rem;;
+  font-size: 1rem;
 }
 
+
 .arrow {
-  margin-left: 4px;
+  margin-top: 15px;
+  margin-left: 10px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 2px;
 }
 
 .down {
@@ -249,8 +291,8 @@ header img {
 footer {
   position: relative;
   display: flex;
-  justify-content: end;
   flex-direction: column;
+  justify-content: space-around;
   width: 1024px;
   height: 82px;
   text-align: center;
@@ -283,7 +325,7 @@ footer {
   flex-direction: row;
   width: 450px;
   height: 20px;
-  margin-left: 125px;
+  margin-left: 135px;
   justify-content: space-around;
 }
 
@@ -318,18 +360,18 @@ footer {
 
 .footer--title1 {
   display: flex;
+  font-family: "Raleway-Regular", "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: var(--texto-opc2);
 }
 
 .footer--title2 {
   display: flex;
-}
-
-.footer--title3 {
-  display: flex;
-}
-
-.footer--title4 {
-  display: flex;
+  font-family: "Raleway-Regular", "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--texto-opc1);
 }
 
 .main-container img {
@@ -378,7 +420,4 @@ footer {
   color: #ffffff;
   text-align: center;
   line-height: normal;
-}
-
-.dropdown-menu {
 }
