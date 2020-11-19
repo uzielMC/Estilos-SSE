@@ -1,9 +1,9 @@
 :root {
   /*LOGIN*/
-  --color-bloque-login:  #F3F4F4;
+  --color-bloque-login: #f3f4f4;
   --title-login: #000000;
-  --texto-opc1: #D8D8D8;
-  --texto-opc2: #071E33;
+  --texto-opc1: #d8d8d8;
+  --texto-opc2: #071e33;
   /*Colores UNCOS*/
   --azul-UNCOS: #0081c9;
   --cafe-UNCOS: #72635a;
@@ -49,6 +49,7 @@
   --verde-variante-UTM: #a3d783;
   --verde2-variante-UTM: #7a9c49;
 }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -219,8 +220,7 @@ header img {
   margin: none;
 }
 
-
-.tex{
+.tex {
   display: flex;
   margin-left: 90px;
   margin-top: 5px;
@@ -228,13 +228,13 @@ header img {
   height: auto;
 }
 
-.opc--find-principal{
+.opc--find-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 30px;
   font-size: 1.3rem;
- }
+}
 
 .opc--find {
   display: flex;
@@ -247,14 +247,14 @@ header img {
   font-family: "Raleway-Regular", "Raleway", sans-serif;
   font-style: normal;
   font-size: 1.5rem;
-  background-color:transparent;
+  background-color: transparent;
   color: var(--texto-opc2);
   background-color: var(--color-bloque-login);
   border: 0px solid;
 }
 
 .opc--find:focus {
-  outline:none;
+  outline: none;
 }
 
 .opc--find-hide {
@@ -272,7 +272,6 @@ header img {
   font-style: normal;
   font-size: 1rem;
 }
-
 
 .arrow {
   margin-top: 15px;
@@ -385,6 +384,7 @@ footer {
   position: absolute;
   margin-top: 168px;
 }
+
 .main-form input {
   width: 200px;
   height: 32px;
@@ -421,3 +421,4 @@ footer {
   text-align: center;
   line-height: normal;
 }
+

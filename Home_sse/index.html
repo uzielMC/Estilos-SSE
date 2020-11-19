@@ -1,159 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  </head>
-  <body>
-    <header>
-      <div class="header--div1-img">
-        <img src="./assets/img/utm_u31.png" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header--div1-img">
+      <img src="./assets/img/utm_u31.png" alt="" />
+    </div>
+    <div class="header--div2-img">
+      <img src="./assets/img/umar_u33.png" alt="" />
+    </div>
+    <div class="header--div3-img">
+      <img src="./assets/img/unistmo_u37.png" alt="" />
+    </div>
+    <div class="header--div4-img">
+      <img src="./assets/img/unpa_u38.png" alt="" />
+    </div>
+    <div class="header--div5-img">
+      <img src="./assets/img/unsis_u40.png" alt="" />
+    </div>
+    <div class="header--div6-img">
+      <img src="./assets/img/unsij_u39.png" alt="" />
+    </div>
+    <div class="header--div7-img">
+      <img src="./assets/img/unca_u34.png" alt="" />
+    </div>
+    <div class="header--div8-img">
+      <img src="./assets/img/nova_u32.png" alt="" />
+    </div>
+    <div class="header--div9-img">
+      <img src="./assets/img/uncos_u35.png" alt="" />
+    </div>
+    <div class="header--div10-img">
+      <img src="./assets/img/unicha_u36.png" alt="" />
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="main--title">
+        <p>Sistema de Seguimiento de Egresados y Bolsa de Trabajo</p>
       </div>
-      <div class="header--div2-img">
-        <img src="./assets/img/umar_u33.png" alt="" />
+    </section>
+    <section class="main--section">
+      <div class="main-img">
+        <img src="./assets/img/imagen_main.jpg" width="512" height="404" alt="" />
       </div>
-      <div class="header--div3-img">
-        <img src="./assets/img/unistmo_u37.png" alt="" />
-      </div>
-      <div class="header--div4-img">
-        <img src="./assets/img/unpa_u38.png" alt="" />
-      </div>
-      <div class="header--div5-img">
-        <img src="./assets/img/unsis_u40.png" alt="" />
-      </div>
-      <div class="header--div6-img">
-        <img src="./assets/img/unsij_u39.png" alt="" />
-      </div>
-      <div class="header--div7-img">
-        <img src="./assets/img/unca_u34.png" alt="" />
-      </div>
-      <div class="header--div8-img">
-        <img src="./assets/img/nova_u32.png" alt="" />
-      </div>
-      <div class="header--div9-img">
-        <img src="./assets/img/uncos_u35.png" alt="" />
-      </div>
-      <div class="header--div10-img">
-        <img src="./assets/img/unicha_u36.png" alt="" />
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="main--title">
-          <p>Sistema de Seguimiento de Egresados y Bolsa de Trabajo</p>
+      <div class="main-body">
+        <div class="main-container">
+          <img src="./assets/img/u43.png" alt="" />
+
         </div>
-      </section>
-      <section class="main--section">
-        <div class="main-img">
-          <img
-            src="./assets/img/imagen_main.jpg"
-            width="512"
-            height="404"
-            alt=""
-          />
+        <div class="main-form">
+          <form action="#">
+
+            <select name="Universidad">
+              <option selected value="0"> Selecciona tu universidad </option>
+              <option value="1">Universidad Tecnológica de la Mixteca</option>
+              <option value="2">UNSIS</option>
+            </select>
+            <br>
+            <br>
+            <input type="email" id="fname" name="fname" value="Correo electrónico"><br><br>
+            <input type="email" id="fname" name="fname" value="Contraseña"><br><br>
+            <button type="submit">Entrar</button>
+          </form>
+
         </div>
-        <div class="main-body">
-          <div class="main-container">
-            <img src="./assets/img/u43.png" alt="" />
-            
-          </div>
-          <div class="main-form">
-            <form action="#">
-              
-              <select name="Universidad">
-                <option selected value="0"> Selecciona tu universidad </option> 
-                <option value="1">Universidad Tecnológica de la Mixteca</option> 
-                <option value="2">UNSIS</option> 
-             </select>      
-             <br> 
-             <br>
-              <input type="email" id="fname" name="fname" value="Correo electrónico"><br><br>
-              <input type="email" id="fname" name="fname" value="Contraseña"><br><br>
-              <button type="submit">Entrar</button>
-            </form>
-          
-        </div>
-      </section>
-      <section></section>
-      <section></section>
-      <div>
-          <button id="displayNone" class="opc--find"> 
-            <p class="tex">Aquí encontrarás</p> 
-          </button>
-        <div id="hide-me" class="opc--find-hide">
-          <div class="opc--find-principal"> 
-              <ul>
-                Ofertas laborales
-              </ul>
-              <ul>
-                Directorio de empresas
-              </ul>
-              <ul>
-                Ranking de las mejores empresas
-              </ul>
-          </div>
+    </section>
+    <section></section>
+    <section></section>
+    <div>
+      <button id="displayNone" class="opc--find">
+        <p class="tex">Aquí encontrarás</p>
+      </button>
+      <div id="hide-me" class="opc--find-hide" >
+        <div class="opc--find-principal">
+          <ul>
+            Ofertas laborales
+          </ul>
+          <ul>
+            Directorio de empresas
+          </ul>
+          <ul>
+            Ranking de las mejores empresas
+          </ul>
         </div>
       </div>
-    </main>
-   <footer>
-        <div class="footer--div1-img">
-          <img src="./assets/img/u26.png"  width="132" height="39" alt="" />
-        </div>
-      <div class ="footer--titleT1">
-        <div class= "footer--title1">
-          <p>Sobre SUNEO</p>
-        </div>
-        <div class= "footer--title1">
-          <p>Aviso de Privacidad</p>
-        </div>
-        <div class= "footer--title1">
-          <p>Empresas</p> 
-        </div>
-        <div class= "footer--title1">
-          <p>Ayuda</p>
-        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer--div1-img">
+      <img src="./assets/img/u26.png" width="132" height="39" alt="" />
+    </div>
+    <div class="footer--titleT1">
+      <div class="footer--title1">
+        <p>Sobre SUNEO</p>
       </div>
-      <div class ="footer--titleT2">
-        <div class= "footer--title2">
-          <p>Coordinación de Vinculación de Alumnos y Egresados UTM</p>
-        </div>
-        <div class= "footer--title2">
-          <p>Teléfonos: (953) 53 203 99 o (953) 53 202 14 ext. 113 o 116</p>
-        </div>
+      <div class="footer--title1">
+        <p>Aviso de Privacidad</p>
       </div>
-      <div class ="footer--titleT3">
-        <div class= "footer--title2">
-          <p>De Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 19:00 hrs</p>
-        </div>
-        <div class= "footer--title2">
-          <p>Carretera a Acatlima Km. 2.5 Huajuapan de León, Oaxaca, México C.P 69000</p>
-        </div>
+      <div class="footer--title1">
+        <p>Empresas</p>
       </div>
-            <div class ="footer--titleT4">
-        <div class= "footer--title2">
-          <p>SUNEO, Oaxaca, México. 2020</p>
-        </div>
+      <div class="footer--title1">
+        <p>Ayuda</p>
       </div>
-      <div class="footer--div2-img">
-          <img src="./assets/img/u14.png"  width="48" height="68" alt="" />
+    </div>
+    <div class="footer--titleT2">
+      <div class="footer--title2">
+        <p>Coordinación de Vinculación de Alumnos y Egresados UTM</p>
       </div>
-    </footer>
+      <div class="footer--title2">
+        <p>Teléfonos: (953) 53 203 99 o (953) 53 202 14 ext. 113 o 116</p>
+      </div>
+    </div>
+    <div class="footer--titleT3">
+      <div class="footer--title2">
+        <p>De Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 19:00 hrs</p>
+      </div>
+      <div class="footer--title2">
+        <p>Carretera a Acatlima Km. 2.5 Huajuapan de León, Oaxaca, México C.P 69000</p>
+      </div>
+    </div>
+    <div class="footer--titleT4">
+      <div class="footer--title2">
+        <p>SUNEO, Oaxaca, México. 2020</p>
+      </div>
+    </div>
+    <div class="footer--div2-img">
+      <img src="./assets/img/u14.png" width="48" height="68" alt="" />
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script>
-      $('#displayNone').click(function(e) {
-        // Resetear, por si acaso has estado jugando con la otra propiedad
-        $('#hide-me').css('visibility', 'none');
-        
-        if( $('#hide-me').is(":visible") ) {
-          $('#hide-me').css('display', 'none'); 
-        } else {
-          $('#hide-me').css('display', 'block');
-        }
-      });
- </script>
-  </body>
+    $('#displayNone').click(function (e) {
+      // Resetear, por si acaso has estado jugando con la otra propiedad
+      $('#hide-me').css('visibility', 'none');
+
+      if ($('#hide-me').is(":visible")) {
+        $('#hide-me').css('display', 'none');
+      } else {
+        $('#hide-me').css('display', 'block');
+      }
+    });
+  </script>
+</body>
+
 </html>
