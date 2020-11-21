@@ -50,6 +50,15 @@
   --verde2-variante-UTM: #7a9c49;
 }
 
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
