@@ -6,6 +6,7 @@
   --texto-opc1: #d8d8d8;
   --texto-opc2: #071e33;
   --texto-opc3: #ffffff;
+  --texto-opc4: #7f7f7f;
 }
 
 * {
@@ -45,8 +46,6 @@ header img {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 63px;
-  height: 63px;
 }
 
 .header--div1-img {
@@ -149,6 +148,20 @@ header img {
   display: flex;
 }
 
+.header--div11-img {
+  border-width: 0px;
+  position: absolute;
+  left: 23px;
+  top: 23px;
+}
+
+.header--div10-img {
+  border-width: 0px;
+  position: absolute;
+  left: 883px;
+  top: 6px;
+}
+
 .main--title p {
   text-align: center;
   font-family: "Poppins-Regular", "Poppins", sans-serif;
@@ -182,9 +195,9 @@ header img {
 .main-img {
   position: relative;
   align-self: flex-start;
+  display: flex;
   width: 1024px;
   height: 507px;
-  margin: none;
 }
 
 .tex {
@@ -232,8 +245,8 @@ footer {
   flex-direction: row;
   width: 450px;
   height: 20px;
-  margin-left: 135px;
-  justify-content: space-around;
+  margin-left: 144px;
+  justify-content: space-between;
 }
 
 .footer--titleT2 {
@@ -262,14 +275,14 @@ footer {
   align-items: flex-start;
   width: 800px;
   height: 20px;
-  margin-left: 153px;
+  margin-left: 145px;
 }
 
 .footer--title1 {
   display: flex;
   font-family: "Raleway-Regular", "Raleway", sans-serif;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--texto-opc2);
 }
 
@@ -278,7 +291,7 @@ footer {
   font-family: "Raleway-Regular", "Raleway", sans-serif;
   font-style: normal;
   font-size: 1rem;
-  color: var(--texto-opc1);
+  color: var(--texto-opc4);
 }
 
 .main-container img {
@@ -290,12 +303,12 @@ footer {
 
 .main-form {
   position: absolute;
-  margin-top: 130px;
+  margin-top: 110px;
   width: 405px;
 }
 
 .main-form--Label1 {
-  width: 116px;
+  width: 122px;
   height: 22px;
   background-color: rgba(255, 255, 255, 0);
   box-sizing: border-box;
@@ -307,7 +320,7 @@ footer {
 }
 
 .main-form--Label2 {
-  width: 122px;
+  width: 140px;
   height: 22px;
   background-color: rgba(255, 255, 255, 0);
   box-sizing: border-box;
@@ -315,20 +328,21 @@ footer {
   color: #071e33;
   text-align: left;
   line-height: normal;
-  font-weight: 200px;
   font-size: 1.3rem;
   float: right;
 }
-.main-form--Label3 {
-  width: 530px;
+.main-form--Label3{
+  width: 580px;
   height: 10px;
-  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  background-color: rgba(255,255,255, 0);
   box-sizing: border-box;
-  font-family: "Poppins-Regular", "Poppins", sans-serif;
+  font-family: 'Poppins-Regular', 'Poppins', sans-serif;
   color: #333333;
-  text-align: center;
   line-height: normal;
   font-size: 1rem;
+  margin-top: 550px;
+  margin-left: 40px;
 }
 
 .main-form input {
@@ -359,6 +373,7 @@ footer {
 .Container--button {
   display: flex;
   justify-content: space-between;
+  padding-top: 4px;
 }
 
 .main-form button {
@@ -387,23 +402,20 @@ footer {
 .flecha1 {
   width: 230px;
   height: 62px;
-  background-color: red;
 }
 
 .flecha2 {
-  width: 230px;
+  width: 255px;
   height: 62px;
-  background-color: green;
+  padding-right: 100px;
 }
 
 .flecha3 {
   width: 230px;
   height: 62px;
-  background-color: blue;
 }
 
 .flecha4 {
   width: 230px;
   height: 62px;
-  background-color: pink;
 }
