@@ -5,7 +5,8 @@
   --color-bloque-login: #f3f4f4;
   --color-bloque-header: #071e33;
   --color-button1: rgba(172, 171, 171, 1);
-  --title-login: #000000;
+  --color-menu:#ffffff;
+  --title-menu: #000000;
   --texto-opc1: #d8d8d8;
   --texto-opc2: #071e33;
   --texto-opc3: #ffffff;
@@ -43,19 +44,17 @@ header {
   width: 1024px;
   height: 85px;
   text-align: center;
-  background-color: var(--color-bloque-header);
+  background-color: var(--color-menu);
   margin: 0 auto;
 }
 
 .header--img1{
-  border-width: 0px;
-  width:132px; 
-  height:39px;
+  width: 75px;
+  height: 73px;
   margin-left: 10px;
 }
 
 .header--img2{
-  border-width: 0px;
   width:75px; 
   height:73px;
   margin-top: 3px;
@@ -68,5 +67,5 @@ header {
   font-weight: 400;
   font-style: normal;
   font-size: 2.5rem; /*1rem = 10 px*/
-  color: var(--texto-opc3);
+  color: var(--title-menu);
 }
