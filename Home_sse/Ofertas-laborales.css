@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   /*LOGIN*/
   --color-bloque-login: #f3f4f4;
@@ -29,7 +32,8 @@ body {
   flex-direction: column;
   background-image: url("assets/img/imagen_main.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1376px 712px;
+  width: 1391px;
 }
 
 header {
@@ -58,6 +62,7 @@ header img {
   opacity: 0.93;
   display: flex;
   flex-direction: row;
+  background-color: #6b6b6b;
 }
 
 .header--div0 img {
@@ -76,32 +81,31 @@ header img {
 
 .header--option--1 {
   width: 144px;
-  height: 32px;
-  background-color: #632a29;
 }
 
 .header--option--2 {
-  width: 184px;
-  height: 32px;
-  background-color: #6b6b6b;
+  width: 193px;
 }
 
 .header--option--3 {
-  width: 144px;
-  height: 32px;
-  background-color: #6b6b6b;
+  width: 176px;
 }
 
 .header--option--4 {
-  width: 104px;
-  height: 32px;
-  background-color: #6b6b6b;
+  width: 75px;
+  background-color: #632a29;
 }
 
 .header--option--5 {
+  width: 128px;
+}
+
+.header--option--6 {
+  width: 134px;
+}
+
+.header--option--7 {
   width: 174px;
-  height: 32px;
-  background-color:#6b6b6b;
   display: flex;
   justify-content: center;
 }
@@ -112,7 +116,7 @@ header img {
   color: #f2f2f2;
   text-align: center;
   line-height: normal;
-  margin: 6px auto;
+  margin-top: 7px;
 }
 
 .header--icon--1 {
@@ -123,7 +127,15 @@ header img {
   margin: 7px 13px auto 13px;
 }
 
-.header--option--5 img{
+.header--icon--3 {
+  margin: 7px 13px auto 13px;
+}
+
+.header--icon--3 img {
+  border-radius: 8px;
+}
+
+.header--option--7 img{
 	width: 16px;
   height: 16px;
 }
@@ -157,7 +169,7 @@ header img {
 }
 
 .main--card--body {
-  width: 651px;
+  width: 675px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -179,25 +191,14 @@ header img {
   color: #333333;
   text-align: left;
   line-height: normal;
-  margin: 3px 0 3px 0;
 }
 
-.main--card--body--Text1 {
+.main--card--body--Text {
   font-family: 'Poppins-Regular', 'Poppins', sans-serif;
   font-size: 1rem;
   color: #333333;
   text-align: left;
   line-height: normal;
-  margin: 3px 0 0 0;
-}
-
-.main--card--body--Text2 {
-  font-family: 'Poppins-Regular', 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #333333;
-  text-align: left;
-  line-height: 18px;
-  margin: 3px 0 0 0;
 }
 
 .main--card--icons {
@@ -265,6 +266,8 @@ header img {
   color: #333333;
   text-align: center;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .main--container--2::-webkit-scrollbar {
@@ -305,6 +308,7 @@ header img {
   text-align: left;
   line-height: normal; 
   font-size: 12px;
+  padding-left: 4px;
 }
 
 .main-form--1 button {
@@ -432,12 +436,11 @@ footer {
 }
 
 .footer--title--1{
-  margin: 5px 21px 0 0;
+  margin: 5px 21px 2px 0;
 }
 
 .footer--Text {
   font-size: 1rem;
-  height: 14px;
   font-family: 'Raleway-Regular', 'Raleway', sans-serif;
   color: #7f7f7f;
   text-align: left;
@@ -448,10 +451,11 @@ footer {
 
 .footer--title--2-1{
   width: 282px;
-  margin: 4px 45px 0 0;
+  margin: 3px 45px 0 0;
 }
 
 .footer--title--2-2{
   width: 370px;
-  margin: 4px 0;
+  height: 14px;
+  margin-top: 3px;
 }
