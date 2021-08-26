@@ -161,7 +161,7 @@ header{
 }
 
 #cinta--opciones li{
-    padding: 5px;
+    margin-right: 10px;
 }
 
 #cinta--opciones a{
@@ -170,7 +170,7 @@ header{
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 2px;
+    margin-right: 10px;
 }
 
 #cinta--opciones img{
