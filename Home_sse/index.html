@@ -4,43 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="index.css"/>
 </head>
 
 <body>
   <header>
-    <div class="header--div1-img">
-      <img src="./assets/img/utm_u31.png" alt="" />
+    <div class="header">
+      <div class="header--img">
+        <img src="./assets/img/utm_u31.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/umar_u33.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/unistmo_u37.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/unpa_u38.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/unsis_u40.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/unsij_u39.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/unca_u34.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/nova_u32.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/uncos_u35.png" class="header--img-elements" alt="" />
+        <img src="./assets/img/unicha_u36.png" class="header--img-elements"  alt="" />
+      </div>
     </div>
-    <div class="header--div2-img">
-      <img src="./assets/img/umar_u33.png" alt="" />
-    </div>
-    <div class="header--div3-img">
-      <img src="./assets/img/unistmo_u37.png" alt="" />
-    </div>
-    <div class="header--div4-img">
-      <img src="./assets/img/unpa_u38.png" alt="" />
-    </div>
-    <div class="header--div5-img">
-      <img src="./assets/img/unsis_u40.png" alt="" />
-    </div>
-    <div class="header--div6-img">
-      <img src="./assets/img/unsij_u39.png" alt="" />
-    </div>
-    <div class="header--div7-img">
-      <img src="./assets/img/unca_u34.png" alt="" />
-    </div>
-    <div class="header--div8-img">
-      <img src="./assets/img/nova_u32.png" alt="" />
-    </div>
-    <div class="header--div9-img">
-      <img src="./assets/img/uncos_u35.png" alt="" />
-    </div>
-    <div class="header--div10-img">
-      <img src="./assets/img/unicha_u36.png" alt="" />
-    </div>
+
   </header>
   <main>
     <section>
@@ -48,53 +32,58 @@
         <p>Sistema de Seguimiento de Egresados y Bolsa de Trabajo</p>
       </div>
     </section>
-    <section class="main--section">
-      <div class="main-img">
-        <img src="./assets/img/imagen_main.jpg" width="512" height="404" alt="" />
-      </div>
-      <div class="main-body">
-        <div class="main-container">
-          <img src="./assets/img/u43.png" alt="" />
-
+    <div class="main--section">
+      <div class="main--container">
+        <div class="main--img-container">
+          <img src="./assets/img/imagen_main.jpg" class="main--img" alt=""/>
         </div>
-        <div class="main-form">
-          <form action="#">
-
-            <select name="Universidad">
-              <option selected value="0"> Selecciona tu universidad </option>
-              <option value="1">Universidad Tecnológica de la Mixteca</option>
-              <option value="2">UNSIS</option>
-            </select>
-            <br>
-            <br>
-            <input type="email" id="fname" name="fname" value="Correo electrónico"><br><br>
-            <input type="email" id="fname" name="fname" value="Contraseña"><br><br>
-            <button type="submit">Entrar</button>
-          </form>
-
+        <div class="main--form">
+          <div class="main--form-img">
+            <img src="./assets/img/u43.png" class="form--img" alt="" />
+          </div>
+            <form class="main--form-form" action="#">
+              <div class="form--select">
+                <img src="./assets/icons/u27.svg" width="16" height="15" alt=""/>
+                <select name="Universidad">
+                  <option selected value="0"> Selecciona tu universidad </option>
+                  <option value="1">Universidad Tecnológica de la Mixteca</option>
+                  <option value="2">UNSIS</option>
+                </select>
+              </div>
+              <div class="form--input-1">
+                <img src="./assets/icons/Arroba.svg" width="16" height="15" alt=""/>
+                <input type="email" id="mail" name="mail" class="opc--text" value="Correo electrónico">
+              </div>
+              <div class="form--input-2">
+                <img src="./assets/icons/Contraseña.svg" width="16" height="15" alt=""/>
+                <input type="text" id="pass" name="pass"  class="opc--text"  value="Contraseña">
+              </div>
+              <div class="form--button-text">
+                <p class="text--forget">¿Olvido su contraseña?</p>
+                <button type="submit">Entrar</button>
+                <p class="register--text">Registrate</p>
+              </div>    
+            </form>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <div>
-      <button id="displayNone" class="opc--find">
-        <p class="tex">Aquí encontrarás</p>
-      </button>
-      <div id="hide-me" class="opc--find-hide" >
-        <div class="opc--find-principal">
-          <ul>
-            Ofertas laborales
-          </ul>
-          <ul>
-            Directorio de empresas
-          </ul>
-          <ul>
-            Ranking de las mejores empresas
-          </ul>
-        </div>
+  </main>
+    <button id="display" class="opc--find">
+      <p class="tex">Aquí encontrarás</p>
+      <img src="./assets/icons/flecha-apunta-hacia-abajo.png" class="img--arrow" alt="" />
+    </button>
+    <div id="hide-me" class="opc--find-hide" >
+      <div class="opc--find-principal">
+        <ul>
+          Ofertas laborales
+        </ul>
+        <ul>
+          Directorio de empresas
+        </ul>
+        <ul>
+          Ranking de las mejores empresas
+        </ul>
       </div>
     </div>
-  </main>
   <footer>
     <div class="footer--div1-img">
       <img src="./assets/img/u26.png" width="132" height="39" alt="" />
@@ -138,11 +127,14 @@
       <img src="./assets/img/u14.png" width="48" height="68" alt="" />
     </div>
   </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script>
-    $('#displayNone').click(function (e) {
-      // Resetear, por si acaso has estado jugando con la otra propiedad
+    
+    if ($('#hide-me').is(":visible")) {
+        $('#hide-me').css('display', 'none','x');
+    } 
+    $('#display').click(function (e) {
       $('#hide-me').css('visibility', 'none');
 
       if ($('#hide-me').is(":visible")) {
