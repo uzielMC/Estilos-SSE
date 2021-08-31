@@ -5,22 +5,26 @@
   /*LOGIN*/
   --color-menu-header: #6b6b6b;
   --color-option-selected-menu: #632a29;
+  --color-option-hover-menu: #632A29;
   --color-block-events: rgba(255, 255, 255, 0.92);
   --color-scroll-bar: #7f8c8d;
   --color-main-events: #071e33;
   --color-card-others-events: rgba(163, 0, 20, 0.75);
+  --color-hover-others-events: #6d000e;
   --color-pagination: #555555;
   --color-option-selected-pagination: #6d000e;
   --color-elements-form: #ffffff;
+  --color-line: #333333;
   --title-login: #000000;
   --text-opc1: #ffffff;
+  --text-title-header: #333333;
   --text-menu-header: #f2f2f2;
   --text-main-events-1: rgba(255, 255, 255, 1);
   --text-main-events-2: rgba(255, 255, 255, 0.8);
   --text-others-events: #071e33;
   --text-pagination: #ffffff;
   --text-title-footer: #071e33;
-  --text-text-footer: #7f7f7f;
+  --text-footer: #7f7f7f;
 }
 
 * {
@@ -59,107 +63,135 @@ header {
   margin: 0 auto;
 }
 
-header img {
-  border-width: 0px;
-  position: absolute;
-}
-
 .header--container--1 {
   height: 82px;
+  display: flex;
 }
 
 .header--container--2 {
   height: 32px;
-  opacity: 0.93;
   display: flex;
-  flex-direction: row;
   background-color: var(--color-menu-header);
+}
+
+.header--container--2 div p {
+  font-size: 1.4rem;
+  font-family: 'Raleway-Regular', 'Raleway', sans-serif;
+  color: var(--text-menu-header);
+  text-align: left;
+  line-height: normal;
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
+
+.header--div0 {
+  width: 158px;
+  display: flex;
 }
 
 .header--div0 img {
   width: 75px;
   height: 73px;
-  left: 53px;
-  top: 4px;
+  margin: 4px auto 5px 53px;
+}
+
+.header--title {
+  width: 706px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header--title p {
+  font-size: 2.4rem;
+  font-family: 'Poppins-Regular', 'Poppins', sans-serif;
+  color: var(--text-title-header);
+  text-align: left;
+  line-height: normal;
+  margin: 26px auto 24px 0;
+}
+
+.header--div1 {
+  width: 160px;
+  display: flex;
 }
 
 .header--div1 img {
-  left: 905px;
-  top: 3px;
   width: 75px;
   height: 75px;
+  margin: 4px 54px 3px auto;
 }
 
-.header--option--1 {
+.header--option-1 {
   width: 144px;
 }
 
-.header--option--2 {
+.header--option-1 p {
+  margin-left: 10px;
+}
+
+.header--option-2 {
   width: 193px;
 }
 
-.header--option--3 {
+.header--option-2 p {
+  margin-left: 20px;
+}
+
+.header--option-3 {
   width: 176px;
 }
 
-.header--option--4 {
+.header--option-3 p {
+  margin-left: 17px;
+}
+
+.header--option-4 {
   width: 75px;
   background-color: var(--color-option-selected-menu);
 }
 
-.header--option--5 {
+.header--option-4 p {
+  margin-left: 11px;
+}
+
+.header--option-5 {
   width: 128px;
 }
 
-.header--option--6 {
-  width: 134px;
+.header--option-5 p {
+  margin-left: 10px;
 }
 
-.header--option--7 {
-  width: 174px;
+.header--option-6 {
+  width: 150px;
+}
+
+.header--option-6 p {
+  margin-left: 28px;
+}
+
+.header--option-1:hover, .header--option-2:hover, .header--option-3:hover, .header--option-4:hover, .header--option-5:hover, .header--option-6:hover {
+  background-color: var(--color-option-hover-menu);
+}
+
+.header--option-7 {
+  width: 158px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.header--container--2 p{
-  font-size: 1.4rem;
-  font-family: 'Raleway-Regular', 'Raleway', sans-serif;
-  color: var(--text-menu-header);
-  text-align: center;
-  line-height: normal;
-  margin-top: 7px;
+.header--icons {
+  width: 64px;
+  height: 20px;
+  margin-right: 20px;
+  display: flex;
 }
 
-.header--icon--1 {
-  margin: 7px 13px auto 35px;
-}
-
-.header--icon--2 {
-  margin: 7px 13px auto 13px;
-}
-
-.header--icon--3 {
-  margin: 7px 13px auto 13px;
-}
-
-.header--icon--3 img {
-  border-radius: 8px;
-}
-
-.header--option--7 img{
-	width: 16px;
+.header--icons img{
+  width: 16px;
   height: 16px;
-}
-
-.main--title p {
-  text-align: center;
-  font-family: "Poppins-Regular", "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.4rem; /*1rem = 10 px*/
-  color: var(--title-login);
-  margin-top: 26px;
-  margin-bottom: 10px;
+  margin: 7px 8px 8px 0;
+  border-radius: 8px;
 }
 
 .main--container--1 {
@@ -171,7 +203,7 @@ header img {
   background-color: var(--color-block-events);
   box-sizing: border-box;
   font-family: 'Montserrat-Regular', 'Montserrat', sans-serif;
-  color: #333333;
+  color: var(--text-title-header);
   text-align: center;
   line-height: normal;
 }
@@ -186,7 +218,7 @@ header img {
   background-color: var(--color-block-events);
   box-sizing: border-box;
   font-family: 'Montserrat-Regular', 'Montserrat', sans-serif;
-  color: #333333;
+  color: var(--text-title-header);
   text-align: center;
   line-height: normal;
   display: flex;
@@ -248,7 +280,6 @@ header img {
   display: flex;
   position: relative;
   border-radius: 4px;
-  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #a30014 100%);
 }
 
 .card--main--events-img img {
@@ -271,7 +302,6 @@ header img {
   display: flex;
   justify-content: flex-end;
   margin: 21px 0 0 71px;
-  background-color: #a30014;
 }
 
 .card--main--events-img-place p {
@@ -384,15 +414,16 @@ header img {
   justify-content: space-between;
 }
 
-.others--events-container-cards div:hover {
-
-}
-
 .others--events-card {
   width: 450px;
   display: flex;
   border: 1px solid var(--color-card-others-events);
   background-color: var(--color-card-others-events);
+}
+
+.others--events-container-cards div:hover {
+  border-color: var(--color-hover-others-events);
+  background-color: var(--color-hover-others-events);
 }
 
 .others--events-card-img {
@@ -433,7 +464,7 @@ header img {
 
 .others--events-card-title img {
   width: 13px;
-  height: 22px;
+  height: 16px;
   margin-right: 31px;
 }
 
@@ -483,7 +514,6 @@ header img {
   display: flex;
   justify-content: center;
   margin-top: 8px;
-  margin-left: 26px;
   width: 1024px;
   height: 30px;
 }
@@ -494,7 +524,7 @@ header img {
   width: 986px;
   height: 19px;
   margin-top: 38px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid var(--color-line);
 }
 
 .main-form--1 input {
@@ -523,7 +553,7 @@ header img {
 
 .main--pagination {
   width: 406px;
-  height: 26px;
+  height: 22px;
   margin-left: 309px;
   margin-bottom: 12px;
   display: flex;
@@ -608,7 +638,7 @@ footer {
 .footer--Text {
   font-size: 1rem;
   font-family: 'Raleway-Regular', 'Raleway', sans-serif;
-  color: var(--text-text-footer);
+  color: var(--text-footer);
   text-align: left;
   line-height: normal;
   display: flex;

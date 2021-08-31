@@ -3,14 +3,17 @@
 
 :root {
   /*LOGIN*/
-  --color-bloque-login: #f3f4f4;
   --color-bloque-header: #071e33;
+  --color-image: #ffffff;
+  --color-block-form: rgba(255, 255, 255, 0.92);
+  --color-elements-form: #acabab;
   --color-bloque-footer: #f2f3f4;
-  --title-login: #000000;
-  --texto-opc1: #d8d8d8;
-  --texto-opc2: #071e33;
-  --texto-opc3: #ffffff;
-  --texto-opc4: #7f7f7f;
+  --color-hover-elements-form: #071e33;
+  --text-header-title: #ffffff;
+  --text-element-form: #7f8c9d;
+  --text-element-form-2: #333333;
+  --text-title-footer: #071e33;
+  --text-footer: #7f7f7f;
 }
 
 * {
@@ -64,7 +67,7 @@ header {
   width: 75px;
   height: 73px;
   margin: 6px auto 6px 7px;
-  background-color: white;
+  background-color: var(--color-image);
   border-radius: 50px;
 }
 
@@ -75,7 +78,7 @@ header {
 .header--Title p {
   font-size: 2.5rem;
   font-family: 'Poppins-Regular', 'Poppins', sans-serif;
-  color: #ffffff;
+  color: var(--text-header-title);
   text-align: center;
   line-height: normal;
   margin: 27px auto;
@@ -86,7 +89,7 @@ header {
   height: 472px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: var(--color-block-form);
   margin: 8px auto auto 51px;
 }
 
@@ -105,30 +108,30 @@ header {
 .main--form button {
   width: 160px;
   border-radius: 4px;
-  background-color: #acabab;
+  background-color: var(--color-elements-form);
   box-sizing: border-box;
   font-size: 1.3rem;
   font-family: 'Raleway-Regular', 'Raleway', sans-serif;
-  color: #ffffff;
+  color: var(--text-header-title);
   text-align: center;
   line-height: normal;
 }
 
 .main--form button:hover  {
-  background-color: #071e33;
+  background-color: var(--color-hover-elements-form);
 }
 
 .main--form input {
   width: 400px;
   height: 32px;
   border-radius: 5px;
-  border: 1px solid #071e33;
-  background-color: #ffffff;
+  border: 1px solid var(--color-hover-elements-form);
+  background-color: var(--color-image);
   box-sizing: border-box;
   font-size: 1.3rem;
   font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
   font-weight: 200;
-  color: #7f8c9d;
+  color: var(--text-element-form);
   text-align: left;
   padding-left: 4px;
 }
@@ -137,13 +140,13 @@ header {
   width: 400px;
   height: 32px;
   border-radius: 5px;
-  border: 1px solid #071e33;
-  background-color: #ffffff;
+  border: 1px solid var(--color-hover-elements-form);
+  background-color: var(--color-image);
   box-sizing: border-box;
   font-size: 1.3rem;
   font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
   font-weight: 200;
-  color: #071e33;
+  color: var(--text-element-form);
   padding-left: 4px;
 }
 
@@ -164,7 +167,7 @@ header {
   height: 22px;
   font-size: 1.3rem;
   font-family: 'Poppins-Regular', 'Poppins', sans-serif;
-  color: #071e33;
+  color: var(--text-element-form);
   text-align: left;
   line-height: normal;
   margin: 5px auto auto 1px;
@@ -180,7 +183,7 @@ header {
   font-size: 1.3rem;
   font-family: 'Poppins-Light', 'Poppins Light', 'Poppins', sans-serif;
   font-weight: 200;
-  color: #071e33;
+  color: var(--text-element-form);
   text-align: left;
   line-height: normal;
   margin: 14px 2px auto auto;
@@ -194,7 +197,7 @@ header {
 .main--form--label-3 p {
   font-size: 1rem;
   font-family: 'Poppins-Regular', 'Poppins', sans-serif;
-  color: #333333;
+  color: var(--text-element-form-2);
   text-align: center;
   line-height: normal;
   margin: auto auto 14px 201px;
@@ -223,7 +226,7 @@ header {
 .main--header--flecha-1 div, .main--header--flecha-2 div {
   font-size: 1.6rem;
   font-family: 'Poppins-Regular', 'Poppins', sans-serif;
-  color: #ffffff;
+  color: var(--color-image);
   text-align: left;
   line-height: normal;
   margin-top: 19px;
@@ -284,7 +287,7 @@ footer {
   font-size: 1.3rem;
   font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
   font-weight: 200;
-  color: #071e33;
+  color: var(--text-title-footer);
   text-align: left;
   line-height: normal;
   display: flex;
@@ -300,7 +303,7 @@ footer {
   height: 14px;
   font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
   font-weight: 200;
-  color: #7f7f7f;
+  color: var(--text-footer);
   text-align: left;
   line-height: normal;
   display: flex;
