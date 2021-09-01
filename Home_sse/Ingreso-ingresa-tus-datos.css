@@ -67,8 +67,7 @@ header {
   width: 75px;
   height: 73px;
   margin: 6px auto 6px 7px;
-  background-color: var(--color-image);
-  border-radius: 50px;
+  background: url("assets/img/u43_fondo.svg") no-repeat 5px;
 }
 
 .header--Title {

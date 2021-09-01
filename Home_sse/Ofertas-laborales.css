@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   /*LOGIN*/
@@ -375,6 +376,7 @@ header {
   color: var(--color-scroll-bar);
   text-align: left;
   line-height: normal;
+  position: relative;
 }
 
 .main--order--info select {
@@ -388,6 +390,9 @@ header {
   color: var(--text-title-header);
   text-align: left;
   line-height: normal;
+  background: url("assets/icons/flecha-apunta-hacia-abajo-oferta.svg") no-repeat 72px 6px !important;
+  background-size: 10px 5px;
+  appearance: none;
 }
 
 .main--pagination {
