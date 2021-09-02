@@ -415,6 +415,7 @@ ul.menu li.active {
 }
 
 .icon{
+   display: flex;
     float: right;
   padding: 10px 12px 0px 0px;
     width: 16px;
