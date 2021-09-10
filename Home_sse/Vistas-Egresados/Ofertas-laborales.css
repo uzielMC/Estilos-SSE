@@ -37,7 +37,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("assets/img/imagen_main.jpg");
+  background-image: url("../assets/img/imagen_main.jpg");
   background-repeat: no-repeat;
   background-size: 1376px 712px;
   width: 1391px;
@@ -390,7 +390,7 @@ header {
   color: var(--text-title-header);
   text-align: left;
   line-height: normal;
-  background: url("assets/icons/flecha-apunta-hacia-abajo-oferta.svg") no-repeat 72px 6px !important;
+  background: url("../assets/icons/flecha-apunta-hacia-abajo-oferta.svg") no-repeat 72px 6px !important;
   background-size: 10px 5px;
   appearance: none;
 }

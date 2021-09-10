@@ -67,7 +67,7 @@ header {
   width: 75px;
   height: 73px;
   margin: 6px auto 6px 7px;
-  background: url("assets/img/u43_fondo.svg") no-repeat 5px;
+  background: url("../assets/img/u43_fondo.svg") no-repeat 5px;
 }
 
 .header--Title {
@@ -252,7 +252,7 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  background-image: url("assets/img/u46.jpg");
+  background-image: url("../assets/img/u46.jpg");
   background-repeat: no-repeat;
   background-size: 1024px 507px;
 }
