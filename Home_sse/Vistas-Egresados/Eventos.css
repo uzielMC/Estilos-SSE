@@ -7,7 +7,7 @@
   --color-option-selected-menu: #632a29;
   --color-option-hover-menu: #632A29;
   --color-block-events: rgba(255, 255, 255, 0.92);
-  --color-scroll-bar: #7f8c8d;
+  --color-scroll-bar: #acabab;
   --color-main-events: #071e33;
   --color-card-others-events: rgba(163, 0, 20, 0.75);
   --color-hover-others-events: #6d000e;
@@ -45,7 +45,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("assets/img/imagen_main.jpg");
+  background-image: url("../assets/img/imagen_main.jpg");
   background-repeat: no-repeat;
   background-size: 1376px 712px;
   width: 1391px;

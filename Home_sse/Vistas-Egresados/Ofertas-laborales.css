@@ -9,7 +9,7 @@
   --color-option-hover-menu: #632A29;
   --color-block-oferts: rgba(255, 255, 255, 0.92);
   --color-selected-main: rgba(255, 255, 255, 0);
-  --color-scroll-bar: #7f8c8d;
+  --color-scroll-bar: #acabab;
   --color-pagination: #555555;
   --color-option-selected-pagination: #6d000e;
   --text-opc1: #ffffff;
@@ -37,7 +37,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("assets/img/imagen_main.jpg");
+  background-image: url("../assets/img/imagen_main.jpg");
   background-repeat: no-repeat;
   background-size: 1376px 712px;
   width: 1391px;
@@ -390,7 +390,7 @@ header {
   color: var(--text-title-header);
   text-align: left;
   line-height: normal;
-  background: url("assets/icons/flecha-apunta-hacia-abajo-oferta.svg") no-repeat 72px 6px !important;
+  background: url("../assets/icons/flecha-apunta-hacia-abajo-oferta.svg") no-repeat 72px 6px !important;
   background-size: 10px 5px;
   appearance: none;
 }
