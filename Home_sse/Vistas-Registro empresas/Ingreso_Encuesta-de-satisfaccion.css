@@ -202,7 +202,7 @@ header {
   height: 18px;
   display: flex;
   justify-content: space-between;
-  margin-left: 22px;
+  margin: 9px auto auto 22px;
 }
 
 .radio-option label,
@@ -418,27 +418,67 @@ header {
 
 .container--question-10 {
   width: 828px;
-  height: 387px;
+  height: 409px;
   display: flex;
   flex-direction: column;
   margin: 71px 7px auto 45px;
-  background-color: aqua;
 }
 
 .container-table {
   width: 800px;
-  height: 330px;
+  height: 343px;
   margin: 14px auto auto 28px;
-  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
 }
 
-.container-table table{
+.container--description {
+  width: 412px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 6px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container--score {
+  width: 371px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 3px auto;
+  font-family: 'Arial Regular', 'Arial', sans-serif;
+}
+
+.container--description,
+.container--score p {
+  font-size: 1.3rem;
+  color: var(--text-questions);
+  text-align: left;
+  line-height: normal;
+}
+
+table {
   width: 800px;
   height: 288px;
+  border-collapse: collapse;
 }
 
-.table-color-1 {
-  background-color: var(--color-hover-elements-form);
+table .table-other-color-1 {
+  background-color: var(--color-bloque-header);
+}
+
+table .table-other-color-2 {
+  background-color: var(--color-elements-form);
+}
+
+.text-table {
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-header-title);
+  text-align: left;
+  line-height: normal;
+  padding-left: 10px;
 }
 
 .container--question-11 {
@@ -446,7 +486,7 @@ header {
   height: 122px;
   display: flex;
   flex-direction: column;
-  margin: 57px 7px auto 45px;
+  margin: 50px 7px auto 45px;
 }
 
 .container--question-11-radioB{
