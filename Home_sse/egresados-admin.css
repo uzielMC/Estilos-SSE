@@ -381,7 +381,7 @@ li {
 
 
 ul li a:hover {
-    background-color: #632A29 ;
+    background-color: rgb(163,0,20); ;
 }
 
 ul.menu li.active {
@@ -602,7 +602,7 @@ ul.pagination li a.active {
   
 }
 
-ul.pagination li a:hover:not(.active) {background-color: #6d000e;}
+ul.pagination li a:hover {background-color: rgb(163,0,20);}
 
 div.center {text-align: center;}
 

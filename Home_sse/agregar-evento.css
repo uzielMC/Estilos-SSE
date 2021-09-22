@@ -380,7 +380,7 @@ li {
 
 
 ul li a:hover {
-    background-color: #632A29 ;
+    background-color: rgb(163,0,20); 
 }
 
 ul.menu li.active {
