@@ -18,7 +18,8 @@
             <div class="main--header--flecha--text-4"><p>Encuesta de Satisfacción</p></div>
         </div>
     </section>
-    <form action="">
+    <form action="{{ route('Empresa.create' )}}" method="POST">
+        @csrf
         <section id="main--formulario">
             <div class="main--formulario-formulario">
                 <div class="main--formulario-texto">

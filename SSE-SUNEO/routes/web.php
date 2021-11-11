@@ -7,7 +7,6 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::prefix('Empresas')->group(function () {
-    Route::get('/', function() {
-        return view('Registro_Empresas.Ingreso_perfil_de_la_empresa');
-    });
+    Route::get('/', 'RegistroEmpresaController@view');
+    Route::post('/create', 'RegistroEmpresaController@create')->name('Empresa.create');
 });
