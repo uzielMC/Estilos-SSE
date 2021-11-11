@@ -37,7 +37,7 @@
                     <p>Contraseña*</p>
                 </div>
                 <div class="main--formulario-cuadro">
-                    <input type="password" placeholder="Contraseña" name="password" minlength="8" required>
+                    <input type="password" placeholder="Contraseña" name="password" minlength="6" required>
                 </div>
                 <div class="main--formulario-texto">
                     <p>*Campos obligatorios</p>
