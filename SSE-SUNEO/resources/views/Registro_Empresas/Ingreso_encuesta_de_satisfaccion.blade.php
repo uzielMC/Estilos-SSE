@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="{{ asset('css/Ingreso_encuesta_de_satisfaccion.css') }}">
 @endsection
 
+@section('scripts')
+    <script src="{{ asset('js/Ingreso_encuesta_de_satisfaccion.js') }}"> </script>
+@endsection
+
 @section('Container_Registro_Empresas')
     <div class="main--header">
         <div class="main--header--flecha-1">
