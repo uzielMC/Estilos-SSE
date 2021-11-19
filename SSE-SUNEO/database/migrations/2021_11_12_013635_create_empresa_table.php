@@ -17,7 +17,7 @@ class CreateEmpresaTable extends Migration
             $table->id();
             $table->string('nombre',200);
             $table->string('descripcion',500);
-            $table->string('rfc',45)->nullable();
+            $table->string('rfc',45)->nullable()->unique();
             $table->enum('sector',['Pública', 'Privada', 'Propia'])->nullable();
             $table->string('giro',200);
             $table->string('telefono',12);
@@ -46,6 +46,8 @@ class CreateEmpresaTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('empresa');
+        Schema::enableForeignKeyConstraints();
     }
 }

@@ -15,6 +15,12 @@ class CreateUsersEmpresasTable extends Migration
     {
         Schema::create('users_empresas', function (Blueprint $table) {
             $table->id();
+            $table->string('user',50);
+            $table->string('correo',50);
+            $table->string('password',250);
+            $table->unsignedBigInteger('empresa_id')->nullable();
+            $table->foreign('empresa_id')->references('id')->on('empresa');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
