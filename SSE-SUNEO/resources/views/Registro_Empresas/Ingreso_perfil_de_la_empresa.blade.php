@@ -1,4 +1,11 @@
 @extends('layouts.Registro_Empresas')
+
+@section('title','Perfil de la empresa')
+
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('css/Ingreso_perfil_de_la_empresa.css') }}">
+@endsection
+
 @section('Container_Registro_Empresas')
     <section class="main--header">
         <div class="main--header--flecha-1">
@@ -32,7 +39,7 @@
                     <p>Usuario*</p>
                 </div>
                 <div class="main--formulario-cuadro">
-                    <input type="text" placeholder="Nombre de Usuario..." name="nombre" required>
+                    <input type="text" placeholder="Nombre de Usuario..." name="user" required>
                 </div>
                 <div class="main--formulario-texto">
                     <p>Contraseña*</p>

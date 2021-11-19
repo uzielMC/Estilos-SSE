@@ -10,11 +10,11 @@ class RegistroEmpresaController extends Controller
 {
     //
     public function view_perfil_empresa(){
-        return view('Registro Empresas.Ingreso_perfil_de_la_empresa');
+        return view('Registro_Empresas.Ingreso_perfil_de_la_empresa');
     }
 
     public function view_encuesta_satisfaccion(){
-        return view('Registro Empresas.Ingreso_encuesta_de_satisfaccion');
+        return view('Registro_Empresas.Ingreso_encuesta_de_satisfaccion');
     }
 
     public function create(Request $request){
