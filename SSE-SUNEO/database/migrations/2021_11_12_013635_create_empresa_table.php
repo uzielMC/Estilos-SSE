@@ -16,6 +16,7 @@ class CreateEmpresaTable extends Migration
         Schema::create('empresa', function (Blueprint $table) {
             $table->id();
             $table->string('nombre',200);
+            $table->string('departamento',60);
             $table->string('descripcion',500);
             $table->string('rfc',45)->nullable()->unique();
             $table->enum('sector',['Pública', 'Privada', 'Propia'])->nullable();
