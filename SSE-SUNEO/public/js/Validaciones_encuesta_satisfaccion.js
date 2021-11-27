@@ -19,3 +19,23 @@ function validacion(question, obj) {
     if(cont>limite)
         obj.checked = false;
 }
+
+function validacion_inputs(obj, ...inputs){
+    if(obj == "Si"){
+        for(i=0;i < inputs.length; i++)
+            document.getElementById(inputs[i]).removeAttribute("readonly");
+    }else{
+        for(i=0;i < inputs.length; i++)
+            document.getElementById(inputs[i]).setAttribute("readonly",true);
+    }
+}
+
+function validacion_inputs_checkbox(name,obj,input){
+    if(obj.checked){
+        document.getElementById(input).removeAttribute("readonly");
+        document.getElementById(input).setAttribute("name",name);
+    }else{
+        document.getElementById(input).setAttribute("readonly",true);
+        document.getElementById(input).setAttribute("name","");
+    }
+}
