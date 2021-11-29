@@ -30,7 +30,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/img/normal_u25.jpg");
+  background-image: url("../assets/img/normal_u25.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -68,7 +68,7 @@ body {
 }
 
 .header--img2{
-  width:75px; 
+  width:75px;
   height:73px;
   margin-right: 10px;
   margin: 4px 0px 0px 40px;
@@ -352,7 +352,7 @@ body {
 }
 
 .main--back {
-    
+
     width: 1024px;
     height: 507px;
     background-color: white;
@@ -386,7 +386,7 @@ ul li a:hover {
 
 ul.menu li.active {
     background-color: #6d000e;
-    
+
 }
 
 
@@ -426,7 +426,7 @@ ul.menu li.active {
 .item-r{
   float: right;
   padding: 14px 14px;
-   
+
 }
 
 
@@ -434,7 +434,7 @@ ul.menu li.active {
 .item-nav{
   float: center;
     padding: 10px 5px;
- 
+
 }
 
 .form-navbar{
@@ -519,8 +519,8 @@ table {
   width: 90%;
   height: 418px;
   width: 980px
-  
-  
+
+
 }
 
 
@@ -544,7 +544,7 @@ tr:nth-child(even) {
 
 tr:hover{
   background-color: rgba(170,170,170,1);
-  
+
 }
 
     list-style-type: none; {
@@ -557,14 +557,14 @@ tr:hover{
 table .tabla-inicio {
   background-color:#6b6b6b;
   font-size: 13px;
-  color: white;  
+  color: white;
 
 }
 table .tabla-fin{
   background-color:#6b6b6b ;
   font-size: 12px;
-  color: white; 
-  height: 20px; 
+  color: white;
+  height: 20px;
 
 }
 
@@ -581,7 +581,7 @@ ul.pagination {
     margin: 15px 280px;
     width:  400px;
     height: 22px;
-    
+
 }
 
 ul.pagination li {display: inline;}
@@ -599,7 +599,7 @@ ul.pagination li a {
 ul.pagination li a.active {
     background-color: #6d000e;
     color: white;
-  
+
 }
 
 ul.pagination li a:hover {background-color: rgb(163,0,20);}
@@ -623,12 +623,12 @@ footer {
   position: absolute;
   left: 30px;
   top: 17px;
-  width: 100px; 
+  width: 100px;
   height: 29px;
 }
 
 .footer-img1{
-  width: 100px; 
+  width: 100px;
   height: 29px;
 }
 

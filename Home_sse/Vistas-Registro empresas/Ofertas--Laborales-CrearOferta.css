@@ -4,7 +4,7 @@
 
 :root {
     --bg--gris: #6b6b6b;
-    --bg--guinda: #6d000e;  
+    --bg--guinda: #6d000e;
     --bg--guinda--hover: rgb(163,0,20);
     --bg--guinga--bg: rgba(163, 0, 20, 0.85);
     --bg--blanco: #ffffff;
@@ -14,10 +14,10 @@
     --txt--grisOscuro: #333333;
     --txt--blanco: #ffffff;
     --bg--menu-izq: #acabab;
-  
+
     --bg--red-sede:#a30014;
     --bg--guinda-sede: #632a29;
-    
+
     --border--gris: #797979;
     --bgbtn--search: #7f8c8d;
     --txt--filter:#818d8e;
@@ -32,12 +32,12 @@
     --txt--Rechazada: #d9001b;
     --txt--black: #000000;
     --bg--button: #364859;
-  
+
     --footer--bg--gris: rgba(242, 243, 244, 0.92);
     --footer--acerca: #071e33;
     --footer--txt: #7f7f7f;
   }
-  
+
 
 * {
   margin: 0;
@@ -49,7 +49,7 @@
 }
 
 body{
-    background-image: url('assets/img/fondo_ofertas.jpg');
+    background-image: url("../assets/img/normal_u460.jpg");
     background-attachment: fixed;
     background-size:cover;
 }
@@ -273,7 +273,47 @@ header{
     color: var(--bg--tab--grisOscuro);
 }
 
+.radio-buttom{
+width: 25px;
+ background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.radio-buttom2{
+    width: 14px;
+    height: 14px;
+    color: #797979;
+    box-sizing: border-box;
+    margin: 5px 5px;
+    border-radius: 80px;
+    border: 1px solid;
+}
+.radio-buttom2:active{
+    background-color: red;
+}
+
+.radio-text{
+  font-family: 'Arial Normal', 'Arial', sans-serif;
+  font-size: 13px;
+  color: #333333;
+  text-align: left;
+  line-height: normal;
+}
+
 .campo--der-select{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--footer--acerca);
+    font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 0.8125em;
+    font-weight: 200;
+    background-color: #071e33;
+}
+
+.campo--der-select--2{
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -337,6 +377,7 @@ header{
     cursor: pointer;
     font-family: 'Raleway-Regular', 'Raleway', sans-serif;
     font-size: 0.8125em;
+    text-align: center;
 }
 
 .texto--boton-buton1:hover{
@@ -396,7 +437,7 @@ footer img{
 #footer--texto1{
     text-align: left;
     margin-left: 20px;
-} 
+}
 
 #footer-texto2{
     margin-left: 50px;
@@ -405,4 +446,100 @@ footer img{
 
 #footer--texto p{
     margin-top: 3px;
+}
+
+.modal--container{
+  display: flex;
+  position:absolute;
+  justify-content: center;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 183px;
+  opacity: 0;
+  width: 1024px;
+  height: 674px;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.content-modal{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  z-index: 99999;
+  align-self: center;
+  justify-content: center;
+  top: 300px;
+  width: 600px;
+  height: 245px;
+  background-color:#071e33;
+}
+
+.modal--title{
+  position: relative;
+  bottom: 20px;
+  align-self: center;
+  font-family: 'Poppins-SemiBold', 'Poppins SemiBold', 'Poppins', sans-serif;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.container-text2{
+  display: flex;
+  position: relative;
+  left: 20px;
+  width: 480px;
+  height: 24px;
+  align-self: center;
+  font-family: 'Montserrat Regular', 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+.modal--container:target{
+  opacity: 1.5;
+  pointer-events: visible;
+}
+.content1--more_coments-text{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  line-height: normal;
+  font-style: normal;
+  font-size: 13px;
+  position: relative;
+  top: 10px;
+}
+.modal--container-buttons{
+  display: flex;
+  position: relative;
+  align-self:center;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 25px;
+  width: 539px;
+  height: 32px;
+}
+.modal-button3{
+  width: 200px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #a10014;
+  background-color: #a10014;
+  box-sizing: border-box;
+  font-family: 'Montserrat-Medium', 'Montserrat Medium', 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.99);
+  text-align: center;
+  line-height: normal;
+  position: relative;
+  top: -12px;
+}
+.modal-button1-text{
+  position: relative;
+  top: 9px;
 }
