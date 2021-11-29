@@ -7,7 +7,7 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('js/Ingreso_encuesta_de_satisfaccion.js') }}"> </script>
+    <script src="{{ asset('js/Validaciones_encuesta_satisfaccion.js') }}"> </script>
 @endsection
 
 @section('Container_Registro_Empresas')
@@ -75,13 +75,13 @@
                         <div class="container-question-radioB">
                             <div class="more-options">
                                 <div class="radio-option">
-                                    <input type="radio" id="pregunta_2-radio-1" name="pregunta_2" value="Si" />
+                                    <input type="radio" id="pregunta_2-radio-1" name="pregunta_2" value="Si" onchange="validacion_inputs(this.value, 'pregunta_2-input-a','pregunta_2-input-b','pregunta_2-input-c','pregunta_2-input-d')"/>
                                     <label for="pregunta_2-radio-1">Si</label>
                                 </div>
                                 <p>¿cuáles?</p>
                             </div>
                             <div class="radio-option">
-                                <input type="radio" id="pregunta_2-radio-2" name="pregunta_2" value="No" />
+                                <input type="radio" id="pregunta_2-radio-2" name="pregunta_2" value="No" onchange="validacion_inputs(this.value, 'pregunta_2-input-a','pregunta_2-input-b','pregunta_2-input-c','pregunta_2-input-d')"/>
                                 <label for="pregunta_2-radio-2">No</label>
                             </div>
                         </div>
@@ -89,21 +89,21 @@
                             <div class="container-more-options">
                                 <div class="container-input">
                                     <div class="more-options-2"><p>a)</p></div>
-                                    <input type="text" id="pregunta_2-input-a" name="pregunta_2-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_2-input-a" name="pregunta_2_input[]" placeholder="...." readonly="true">
                                 </div>
                                 <div class="container-input">
                                     <div class="more-options-2"><p>c)</p></div>
-                                    <input type="text" id="pregunta_2-input-c" name="pregunta_2-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_2-input-c" name="pregunta_2_input[]" placeholder="...." readonly="true">
                                 </div>
                             </div>
                             <div class="container-more-options">
                                 <div class="container-input">
                                     <div class="more-options-2"><p>b)</p></div>
-                                    <input type="text" id="pregunta_2-input-b" name="pregunta_2-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_2-input-b" name="pregunta_2_input[]" placeholder="...." readonly="true">
                                 </div>
                                 <div class="container-input">
                                     <div class="more-options-2"><p>d)</p></div>
-                                    <input type="text" id="pregunta_2-input-d" name="pregunta_2-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_2-input-d" name="pregunta_2_input[]" placeholder="...." readonly="true">
                                 </div>
                             </div>
                         </div>
@@ -121,13 +121,13 @@
                         <div class="container-question-radioB">
                             <div class="more-options">
                                 <div class="radio-option">
-                                    <input type="radio" id="calification-3-radio-1" name="pregunta_3" value="Si" />
+                                    <input type="radio" id="calification-3-radio-1" name="pregunta_3" value="Si" onchange="validacion_inputs(this.value, 'pregunta_3-input-a','pregunta_3-input-b','pregunta_3-input-c','pregunta_3-input-d')"/>
                                     <label for="calification-3-radio-1">Si</label>
                                 </div>
                                 <p>¿cuáles?</p>
                             </div>
                             <div class="radio-option">
-                                <input type="radio" id="calification-3-radio-2" name="pregunta_3" value="No" />
+                                <input type="radio" id="calification-3-radio-2" name="pregunta_3" value="No" onchange="validacion_inputs(this.value, 'pregunta_3-input-a','pregunta_3-input-b','pregunta_3-input-c','pregunta_3-input-d')"/>
                                 <label for="calification-3-radio-2">No</label>
                             </div>
                         </div>
@@ -135,21 +135,21 @@
                             <div class="container-more-options">
                                 <div class="container-input">
                                     <div class="more-options-2"><p>a)</p></div>
-                                    <input type="text" id="fname" name="pregunta_3-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_3-input-a" name="pregunta_3_input[]" placeholder="...." readonly="true">
                                 </div>
                                 <div class="container-input">
                                     <div class="more-options-2"><p>c)</p></div>
-                                    <input type="text" id="fname" name="pregunta_3-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_3-input-c" name="pregunta_3_input[]" placeholder="...." readonly="true">
                                 </div>
                             </div>
                             <div class="container-more-options">
                                 <div class="container-input">
                                     <div class="more-options-2"><p>b)</p></div>
-                                    <input type="text" id="fname" name="pregunta_3-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_3-input-b" name="pregunta_3_input[]" placeholder="...." readonly="true">
                                 </div>
                                 <div class="container-input">
                                     <div class="more-options-2"><p>d)</p></div>
-                                    <input type="text" id="fname" name="pregunta_3-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_3-input-d" name="pregunta_3_input[]" placeholder="...." readonly="true">
                                 </div>
                             </div>
                         </div>
@@ -306,10 +306,10 @@
                         </div>
                         <div class="container-radioB_input">
                             <div class="radio-option">
-                                <input type="checkbox" id="habilidades-checkbox-22" name="pregunta_4[]" value="Otras" onchange="validacion('question-4', this)"/>
+                                <input type="checkbox" id="habilidades-checkbox-22" name="pregunta_4[]" value="Otras" onchange="validacion('question-4', this); validacion_inputs_checkbox('pregunta_4[]',this,'pregunta_4-input')"/>
                                 <label for="habilidades-checkbox-22">Otras:</label>
                             </div>
-                            <div class="input-option"><input type="text" id="fname" name="fname" placeholder="...."></div>
+                            <div class="input-option"><input type="text" id="pregunta_4-input" name="" placeholder="...." readonly="true"></div>
                         </div>
                     </div>
                 </div>
@@ -364,13 +364,13 @@
                         <div class="container-question-radioB">
                             <div class="more-options">
                                 <div class="radio-option">
-                                    <input type="radio" id="calification-6-radio-1" name="pregunta_6" value="Si" />
+                                    <input type="radio" id="calification-6-radio-1" name="pregunta_6" value="Si" onchange="validacion_inputs(this.value, 'pregunta_6-input-a','pregunta_6-input-b','pregunta_6-input-c','pregunta_6-input-d')"/>
                                     <label for="calification-6-radio-1">Si</label>
                                 </div>
                                 <p>¿cuáles?</p>
                             </div>
                             <div class="radio-option">
-                                <input type="radio" id="calification-6-radio-2" name="pregunta_6" value="No" />
+                                <input type="radio" id="calification-6-radio-2" name="pregunta_6" value="No" onchange="validacion_inputs(this.value, 'pregunta_6-input-a','pregunta_6-input-b','pregunta_6-input-c','pregunta_6-input-d')"/>
                                 <label for="calification-6-radio-2">No</label>
                             </div>
                         </div>
@@ -378,21 +378,21 @@
                             <div class="container-more-options">
                                 <div class="container-input">
                                     <div class="more-options-2"><p>a)</p></div>
-                                    <input type="text" id="fname" name="pregunta_6-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_6-input-a" name="pregunta_6_input[]" placeholder="...." readonly="true">
                                 </div>
                                 <div class="container-input">
                                     <div class="more-options-2"><p>c)</p></div>
-                                    <input type="text" id="fname" name="pregunta_6-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_6-input-c" name="pregunta_6_input[]" placeholder="...." readonly="true">
                                 </div>
                             </div>
                             <div class="container-more-options">
                                 <div class="container-input">
                                     <div class="more-options-2"><p>b)</p></div>
-                                    <input type="text" id="fname" name="pregunta_6-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_6-input-b" name="pregunta_6_input[]" placeholder="...." readonly="true">
                                 </div>
                                 <div class="container-input">
                                     <div class="more-options-2"><p>d)</p></div>
-                                    <input type="text" id="fname" name="pregunta_6-input[]" placeholder="....">
+                                    <input type="text" id="pregunta_6-input-d" name="pregunta_6_input[]" placeholder="...." readonly="true">
                                 </div>
                             </div>
                         </div>
@@ -551,10 +551,10 @@
                         </div>
                         <div class="container-radioB_input">
                             <div class="radio-option">
-                                <input type="checkbox" id="valores-checkbox-22" name="pregunta_7[]" value="Otras" onchange="validacion('question-7', this)"/>
+                                <input type="checkbox" id="valores-checkbox-22" name="pregunta_7[]" value="Otras" onchange="validacion('question-7', this); validacion_inputs_checkbox('pregunta_7[]',this,'pregunta_7-input')"/>
                                 <label for="valores-checkbox-22">Otras:</label>
                             </div>
-                            <div class="input-option"><input type="text" id="fname" name="fname" placeholder="...."></div>
+                            <div class="input-option"><input type="text" id="pregunta_7-input" name="" placeholder="...." readonly="true"></div>
                         </div>
                     </div>
                 </div>
@@ -647,10 +647,10 @@
                         </div>
                         <div class="container-radioB_input-2">
                             <div class="radio-option">
-                                <input type="checkbox" id="habilidades_a_desarrollar-checkbox-7" name="pregunta_9[]" value="Otras" onchange="validacion('question-9', this)"/>
+                                <input type="checkbox" id="habilidades_a_desarrollar-checkbox-7" name="pregunta_9[]" value="Otras" onchange="validacion('question-9', this); validacion_inputs_checkbox('pregunta_9[]',this,'pregunta_9-input')"/>
                                 <label for="habilidades_a_desarrollar-checkbox-7">Otras:</label>
                             </div>
-                            <div class="input-option"><input type="text" id="fname" name="fname" placeholder="...."></div>
+                            <div class="input-option"><input type="text" id="pregunta_9-input" name="" placeholder="...." readonly="true"></div>
                         </div>
                     </div>
                 </div>
@@ -803,7 +803,7 @@
                         <div class="container-option-true">
                             <div class="more-options">
                                 <div class="radio-option">
-                                    <input type="radio" id="calification-11-radio-1" name="calification-11" value="Si" />
+                                    <input type="radio" id="calification-11-radio-1" name="pregunta_11" value="Si" onchange="validacion_inputs('No', 'pregunta_11-input')"/>
                                     <label for="calification-11-radio-1">Si</label>
                                 </div>
                                 <p>¿cuáles?</p>
@@ -811,11 +811,11 @@
                         </div>
                         <div class="container-option-false">
                             <div class="radio-option">
-                                <input type="radio" id="calification-11-radio-2" name="calification-11" value="No" />
+                                <input type="radio" id="calification-11-radio-2" name="pregunta_11" value="No" onchange="validacion_inputs('Si', 'pregunta_11-input')"/>
                                 <label for="calification-11-radio-2">No,</label>
                             </div>
                             <div class="container-label"><p>¿porque?</p></div>
-                            <div class="container-option-false-input"><input type="text" id="fname" name="fname" placeholder="...."></div>
+                            <div class="container-option-false-input"><input type="text" id="pregunta_11-input" name="pregunta_11_input[]" placeholder="...." readonly="true"></div>
                         </div>
                     </div>
                 </div>
@@ -828,7 +828,7 @@
                         </p>
                     </div>
                     <div class="container--question-12-input">
-                        <textarea name="recomendaciones" id="" cols="30" rows="5" placeholder="Agrega recomendaciones aquí..."></textarea>
+                        <textarea name="pregunta_12" id="" cols="30" rows="5" placeholder="Agrega recomendaciones aquí..."></textarea>
                     </div>
                 </div>
             </div>
