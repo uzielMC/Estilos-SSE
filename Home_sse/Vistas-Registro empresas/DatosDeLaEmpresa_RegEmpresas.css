@@ -11,14 +11,14 @@
     --bg--trans--gris:rgba(215, 215, 215, 0.35);
     --bg--trans--azul:rgba(7, 30, 51, 0.35);
     --bg--trans--gris-footer:rgba(242, 243, 244, 0.92);
-    
+
     --txt--azul:#071e33;
     --txt--blanco:#ffffff;
     --txt--gris:#7f8c9d;
     --txt--azul-footer:#071e33;
     --txt--gris-footer:#7f7f7f;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -27,18 +27,18 @@
     border: none;
     outline: none;
   }
-  
+
   html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
-  
+
   body {
     display: flex;
     flex-direction: column;
   }
-  
+
   header {
     width: 1024px;
     height: 85px;
@@ -48,7 +48,7 @@
     align-items: center;
     background-color: var(--bg--azul);
     margin: 0 auto;
-    
+
 }
 
 .header--div1-img {
@@ -88,7 +88,7 @@
     font-size: 2.5rem; /*1rem = 10 px*/
     color: var(--txt--blanco);
 }
-  
+
 .main--section {
     width: 1024px;
     height: 507px;
@@ -106,7 +106,7 @@
     background-color: var(--bg--trans--blanco);
     margin: 8px auto 11px auto;
 }
-  
+
 
 
 .main--header {
@@ -114,11 +114,11 @@
     display: flex;
     margin-bottom: 8px;
 }
-  
+
 .main--header img{
     width: 260px;
 }
-  
+
 .main--header--flecha-1, .main--header--flecha-2 {
     height: 62px;
     width: 225px;
@@ -127,24 +127,24 @@
     display: flex;
     justify-content: flex-start;
 }
-  
+
 .main--header--flecha-2 {
     right: 15px;
 }
-  
+
 .main--header--flecha-1 div, .main--header--flecha-2 div {
       font-size: 1.6rem;
       font-family: 'Poppins-Regular', 'Poppins', sans-serif;
       color: var(--txt--blanco);
       text-align: left;
       line-height: normal;
-    
+
       position: absolute;
 }
-  
+
 .main--header--flecha--text-1{
     height: 100%;
-    min-width:220px; 
+    min-width:220px;
     display: flex;
     align-items: center;
     margin-left: 30px;
@@ -152,7 +152,7 @@
 
 .main--header--flecha--text-2{
     height: 100%;
-    min-width:220px; 
+    min-width:220px;
     display: flex;
     align-items: center;
     margin-left: 35px;
@@ -161,7 +161,7 @@
 .main--header--flecha--text-3,
 .main--header--flecha--text-4 {
     height: 100%;
-    min-width:220px; 
+    min-width:220px;
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -171,12 +171,12 @@
     width: 660px;
     height: 340px;
     margin: 0px auto;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 #formulario--formulario1{
     margin: 0px auto;
-    background: var(--bg--trans--azul); 
+    background: var(--bg--trans--azul);
     padding-left: 28px;
 }
 
@@ -217,6 +217,20 @@
     margin-bottom: 5px;
 }
 
+.datos--empresa--imagen{
+    font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
+    font-size: 13px;
+    padding-left: 5px;
+    color: var(--txt--gris);
+    width: 421px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid var(--bg--azul);
+    position: relative;
+    top: 5px;
+    left: 14px;
+}
+
 .datos--empresa-descripcion{
     width: 598px;
     height: 157px;
@@ -237,7 +251,7 @@
 .formulario--datos--empresa-flex div{
     margin-top: 10px;
     margin-right: 13px;
-    
+
 }
 .datos--empresa-flex{
     height: 32px;
@@ -278,8 +292,10 @@
 #formulario--formulario2{
     width: 660px;
     margin: 0px auto;
-    background: var(--bg--trans--gris);
+    background: var(--bg--trans--azul);
     padding-left: 27px;
+    position: relative;
+    top: 16px;
 }
 
 #formulario--formulario2 h1{
@@ -297,11 +313,45 @@
     color: var(--txt--azul);
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    margin-left: 28px;
     margin-top: 10px;
 }
 
+.file-select {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 32px;
 
+}
+
+
+.file-select::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 160px;
+  height: 32px;
+  background-color: #071e33;
+  border-radius: 5px;
+  border: 1px solid #7f8c8d;
+  font-size: 13px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+
+}
+
+.file-select input[type="file"] {
+  opacity: 0;
+  display: inline-block;
+  width: 160px;
+  height: 32px;
+}
+
+#src-file1::before {
+  content: 'Cargar';
+}
 
 
 
@@ -413,7 +463,7 @@ footer{
 #footer--texto1{
     text-align: left;
     margin-left: 20px;
-} 
+}
 
 #footer-texto2{
     margin-left: 50px;

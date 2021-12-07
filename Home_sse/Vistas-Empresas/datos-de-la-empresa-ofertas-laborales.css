@@ -102,11 +102,11 @@ li {
 
 ul.menu li.active {
     background-color: #071e33;
-    
+
 }
 ul.menu li.active2 {
     background-color: #6b6b6b;
-    
+
 }
 
 
@@ -226,7 +226,7 @@ ul.menu li.active2 {
 
 #contenido--tabla-tabla{
     max-width: 980px;
-    font-family: 'Poppins-Regular', 'Poppins', sans-serif; 
+    font-family: 'Poppins-Regular', 'Poppins', sans-serif;
     border: 1px solid #071e33;
     border-radius: 6px 6px 0px 0px;
 }
@@ -353,7 +353,7 @@ footer img{
 #footer--texto1{
     text-align: left;
     margin-left: 20px;
-} 
+}
 
 #footer-texto2{
     margin-left: 50px;
@@ -363,3 +363,291 @@ footer img{
 #footer--texto p{
     margin-top: 3px;
 }
+
+.modal--container{
+  display: flex;
+  position:absolute;
+  justify-content: center;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 183px;
+  opacity: 0;
+  width: 1024px;
+  height: 674px;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.content-modal{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  z-index: 99999;
+  align-self: center;
+  justify-content: center;
+  top: 145px;
+  width: 750px;
+  height: 487px;
+  background-color:#071e33;
+}
+
+.content-modal-confirmacion{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  z-index: 99999;
+  align-self: center;
+  justify-content: center;
+  top: 145px;
+  width: 600px;
+  height: 245px;
+  background-color:#071e33;
+}
+.modal--title{
+  position: relative;
+  bottom: 20px;
+  align-self: center;
+  font-family: 'Poppins-SemiBold', 'Poppins SemiBold', 'Poppins', sans-serif;
+  font-weight: 650;
+  font-style: normal;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.modal-subtitle{
+  position: relative;
+  bottom: 20px;
+  align-self: center;
+  font-family: 'Montserrat Bold', 'Montserrat Regular', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.99);
+  text-align: left;
+  line-height: normal;
+}
+
+.modal--container:target{
+  opacity: 1.5;
+  pointer-events: visible;
+}
+
+.container-text1{
+  display: flex;
+  position: relative;
+  width: 700px;
+  height: 320px;
+  align-self: center;
+  font-family: 'Poppins-Italic', 'Poppins Italic', 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.contenido2{
+  width: 750px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-img{
+  display: flex;
+  width: 280px;
+  height: 180px;
+  position: relative;
+  left: 30px;
+}
+.informacion{
+  position: relative;
+  left: 60px;
+  width: 388px;
+  height: 179px;
+  padding: 2px 2px 2px 2px;
+  border-radius: 4px;
+  background-color: rgba(107, 107, 107, 0.39);
+  box-sizing: border-box;
+}
+.titulos{
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.99);
+  font-size: 13px;
+  text-align: left;
+  line-height: normal;
+}
+
+.titulos2{
+  position: relative;
+  top: -3px;
+  box-sizing: border-box;
+  font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.99);
+  font-size: 13px;
+  text-align: left;
+  line-height: normal;
+}
+.iconos{
+  position: relative;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+
+.iconos-texto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  padding: 5px;
+  /*margin: 0px 0px 10px 0px;*/
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: left;
+  line-height: normal;
+  align-content: center;
+}
+
+.beneficios{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-gap: 5px;
+  padding: 5px;
+  /*margin: 0px 0px 10px 0px;*/
+}
+.sueldo{
+background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.99);
+  text-align: left;
+  line-height: normal;
+}
+.idiomas{
+  position: relative;
+  left: 5px;
+  top: -9px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.99);
+  text-align: left;
+  line-height: normal;
+}
+
+.fecha{
+   position: relative;
+  top: -14px;
+  box-sizing: border-box;
+  font-family: 'Poppins SemiBold', 'Poppins Regular', 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.99);
+  font-size: 13px;
+  text-align: left;
+  line-height: normal;
+}
+.fecha-num{
+ position: relative;
+  left: 5px;
+  top: -12px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.99);
+  text-align: left;
+  line-height: normal;
+}
+.descripcion-puesto{
+  position: relative;
+  left: 35px;
+  top: 30px;
+  width: 680px;
+  height: 109px;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: justify-all;
+  line-height: 15px;
+
+}
+
+.mensaje{
+    box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9882352941176471);
+    text-align: center;
+}
+
+.modal--container-buttons{
+  display: flex;
+  position: relative;
+  align-self:center;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 25px;
+  width: 450px;
+  height: 32px;
+}
+.modal--container-buttons2{
+  display: flex;
+  position: relative;
+  align-self:center;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 40px;
+  width: 450px;
+  height: 32px;
+}
+
+.modal-button1{
+  width: 200px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid rgba(109, 0, 14, 0.99);
+  background-color: rgba(109, 0, 14, 0.99);
+  box-sizing: border-box;
+  font-family: 'Montserrat Medium', 'Montserrat Regular', 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.99);
+  text-align: center;
+  line-height: normal;
+  position: relative;
+  text-decoration-line: none;
+}
+
+.modal-button2{
+  width: 200px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.99);
+  background-color: rgba(255, 255, 255, 0.99);
+  box-sizing: border-box;
+  font-family: 'Montserrat-Medium', 'Montserrat Medium', 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #a10014;
+  text-align: center;
+  line-height: normal;
+  position: relative;
+  text-decoration-line: none;
+}
+.modal-button1-text{
+  position: relative;
+  top: 9px;
+}
+
+

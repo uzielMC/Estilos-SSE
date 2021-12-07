@@ -28,13 +28,16 @@
 body{
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/img/normal_u2.jpg");
+    background-attachment: fixed;
+    background-size:cover;
 }
 
 html {
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
-  
+
 header {
     position: relative;
     display: flex;
@@ -43,36 +46,36 @@ header {
     background-color: var(--color-bloque-header);
     margin: 0 auto;
 }
-  
+
 .header--div--img-1 {
     width: 137px;
     display: flex;
     justify-content: flex-start;
 }
-  
+
 .header--div--img-1 img{
     width: 132px;
     height: 39px;
     margin: 23px auto 23px 11px;
 }
-  
+
 .header--div--img-2 {
     width: 132px;
     display: flex;
     justify-content: flex-start;
 }
-  
+
 .header--div--img-2 img{
     width: 75px;
     height: 73px;
     margin: 6px auto 6px 7px;
     background: url("assets/img/u43_fondo.svg") no-repeat 5px;
 }
-  
+
 .header--Title {
     width: 755px;
 }
-  
+
 .header--Title p {
     font-size: 1.5625rem;
     font-family: 'Poppins-Regular', 'Poppins', sans-serif;
@@ -101,28 +104,28 @@ header {
     background-image: url("assets/img/u46.jpg");
     background-repeat: no-repeat;
     background-size: 1024px 507px;
-}  
+}
 
 .main--header {
     height: 62px;
     display: flex;
 }
-  
+
 .main--header img  {
     width: 260px;
 }
-  
+
 .main--header--flecha-1, .main--header--flecha-2 {
     height: 62px;
     width: 225px;
     display: flex;
     position: relative;
 }
-  
+
 .main--header--flecha-2 {
     right: 15px;
 }
-  
+
 .main--header--flecha-1 div, .main--header--flecha-2 div {
     font-size: 1rem;
     width: 300px;
@@ -134,25 +137,25 @@ header {
     display: flex;
     position: absolute;
 }
-  
+
 .main--header--flecha--text-1 {
     left: 7px;
 }
-  
+
 .main--header--flecha--text-2{
       left: 35px;
-} 
+}
 
-  
+
 .main--header--flecha--text-3 {
     left: 58px;
 }
-  
+
 .main--header--flecha--text-4 {
     width: 270px;
     left: 46px;
 }
-  
+
 #main--formulario{
     width: 920px;
     height: 219px;
@@ -248,23 +251,23 @@ footer {
     background-color: var(--color-bloque-footer);
     margin: 8px auto auto auto;
   }
-  
+
   .footer--container--1 {
     width: 157px;
     display: flex;
     justify-content: flex-start;
   }
-  
+
   .footer--container--1 img{
     width: 132px;
     height: 39px;
     margin: 20px auto auto 11px;
   }
-  
+
   .footer--container--2 {
     width: 752px;
   }
-  
+
   .footer--Title {
     font-size: 0.8125em;
     font-family: 'Raleway-Light', 'Raleway Light', 'Raleway', sans-serif;
@@ -275,11 +278,11 @@ footer {
     display: flex;
     justify-content: flex-start;
   }
-  
+
   .footer--title--1{
     margin: 9px 14px 4px 0;
   }
-  
+
   .footer--Text {
     font-size: 0.625em;
     height: 14px;
@@ -293,22 +296,22 @@ footer {
     margin-top: 3px;
     margin-bottom: 3px;
   }
-  
+
   .footer--title--2-1{
     width: 282px;
     margin-right: 45px;
   }
-  
+
   .footer--title--2-2{
     width: 370px;
   }
-  
+
   .footer--container--3 {
     width: 115px;
     display: flex;
     justify-content: flex-start;
   }
-  
+
   .footer--container--3 img {
     width: 48px;
     height: 68px;

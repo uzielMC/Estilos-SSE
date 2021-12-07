@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,7 +46,7 @@
               <div class="main--header--flecha--text-4"><p>Encuesta de Satisfacción</p></div>
             </div>
           </div>
-        
+
           <section id="contenido--formulario-formulario">
 
             <section id="formulario--formulario1">
@@ -55,14 +55,12 @@
                 <p>Nombre de la Empresa*</p>
                 <input type="text" name="Nombre--E" class="datos--empresa" placeholder="Nombre de la empresa...">
 
-                <p>Correo Electrónico*</p>
-                <input type="text" name="Correo-E" class="datos--empresa" placeholder="Correo de la empresa...">
+                <p>Departamento*</p>
+                <input type="text" name="Departamento-E" class="datos--empresa" placeholder="Correo de la empresa...">
 
-                <p>Teléfono*</p>
-                <input type="text" name="Telefono-E" class="datos--empresa" placeholder="Teléfono o de la empresa...">
-
-                <p>Perfil</p>
-                <input type="text" name="Perfil-E" class="datos--empresa" placeholder="Cargar imagen no mayor a 2MB....">
+                <p>Logotipo de la empresa*</p>
+                <input type="file" name="Imagen-E" class="file-select"  id="src-file1" >
+                <input type="text" name="Texto-I-E" class="datos--empresa--imagen" placeholder="Nombre del archivo seleccionado no mayor a 2MB..."  readonly="readonly">
 
                 <p>Descripción*</p>
                 <textarea type="text" name="Descripción-E" class="datos--empresa-descripcion" placeholder="Describe a la empresa..."></textarea>
@@ -70,11 +68,11 @@
                 <section class="formulario--datos--empresa-flex">
                     <div>
                         <p>Giro de la Empresa*</p>
-                        <input type="text" name="Giro-E" class="datos--empresa-flex" placeholder="Giro de la empresa..."> 
+                        <input type="text" name="Giro-E" class="datos--empresa-flex" placeholder="Giro de la empresa...">
                     </div>
 
                     <div>
-                        <p>Sector*</p>  
+                        <p>Sector*</p>
                         <select class="datos--empresa-flex" name="-Sector-">
                             <option value="value1">— Sector —</option>
                             <option value="value1">-Público</option>
@@ -82,7 +80,7 @@
                             <option value="value1">-Mixta</option>
                         </select>
                     </div>
-                    
+
                 </section>
 
                 <p id="subtitule--form1">Dirección de la Empresa</p>
@@ -90,49 +88,55 @@
                 <section class="formulario--datos--empresa-flex">
                     <div>
                         <p>Calle*</p>
-                        <input type="text" name="Giro-E" class="datos--empresa-flex" placeholder="Calle"> 
+                        <input type="text" name="Giro-E" class="datos--empresa-flex" placeholder="Calle">
                     </div>
 
                     <div>
-                        <p>Colonia*</p>  
+                        <p>Colonia*</p>
                         <input type="text" name="Giro-E" class="datos--empresa-flex" placeholder="Colonia">
                     </div>
-                    
+
                 </section>
 
                 <section class="formulario--datos--empresa-flex">
                     <div>
                         <p>No. / Piso</p>
-                        <input type="text" name="Giro-E" class="datos--empresa--flex-1" placeholder="Número/Piso"> 
+                        <input type="text" name="Giro-E" class="datos--empresa--flex-1" placeholder="Número/Piso">
                     </div>
 
                     <div>
-                        <p>C.P.*</p>  
+                        <p>C.P.*</p>
                         <input type="text" name="Giro-E" class="datos--empresa--flex-1" placeholder="C.P.">
                     </div>
 
                     <div>
-                        <p>Ciudad*</p>  
+                        <p>Ciudad*</p>
                         <input type="text" name="Giro-E" class="datos--empresa-flex" placeholder="Ciudad">
                     </div>
-                    
+
                 </section>
 
-                <p>Estado*</p>  
+                <p>Estado*</p>
                 <input type="text" name="Estado-E" class="datos--empresa-flex" placeholder="Estado">
 
                 <p>Página Web*</p>
                 <input type="text" name="PaginaWeb--E" class="datos--empresa" placeholder="Página web de la empresa...">
 
-                <p>RFC</p>  
+                <p>RFC</p>
                 <input type="text" name="RFC-E" class="datos--empresa-flex" placeholder="Ingrese RFC de la empresa...">
 
+                <p>Teléfono*</p>
+                <input type="text" name="Telefono-E" class="datos--empresa" placeholder="Teléfono o de la empresa...">
+
+                <p>Correo Electrónico*</p>
+                <input type="text" name="Correo-E" class="datos--empresa" placeholder="Correo de la empresa...">
+
                 <p>Información Adicionales</p>
-                
+
                 <textarea type="text" name="Info-Adic-E" class="datos--empresa--flex-2" placeholder="Agrega cualquier otra información adicional que crea necesario."></textarea>
 
                 <br>
-                <br>   
+                <br>
             </section>
 
             <section id="formulario--formulario2">
@@ -163,7 +167,7 @@
                 <button class="navegar--botones-A" type="button">Siguiente</button>
             </div>
         </section>
-          
+
         </div>
       </section>
     </main>
@@ -188,7 +192,7 @@
                     <p>De Lunes a Viernes de 8:00 a 13:00 y de 16:00 a 19:00 hrs</p>
                     <p>SUNEO, Oaxaca, México. 2020</p>
                 </section>
-    
+
                 <section id="footer-texto2">
                     <p>Teléfonos: (953) 53 203 99 o (953) 53 202 14 ext. 113 o 116</p>
                     <p>Carretera a Acatlima Km. 2.5 Huajuapan de León, Oaxaca, México C.P 69000</p>
