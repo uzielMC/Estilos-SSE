@@ -850,8 +850,8 @@ tr:nth-child(odd) td {
   align-self:center;
   flex-direction: row;
   justify-content: space-around;
-  top: 25px;
-  width: 539px;
+  top: 30px;
+  width: 520px;
   height: 32px;
 }
 
@@ -862,14 +862,13 @@ tr:nth-child(odd) td {
   border: 1px solid #a10014;
   background-color: #a10014;
   box-sizing: border-box;
-  font-family: 'Montserrat-Medium', 'Montserrat Medium', 'Montserrat', sans-serif;
+  font-family: 'Montserrat Medium', 'Montserrat Regular', 'Montserrat', sans-serif;
   font-weight: 500;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.99);
   text-align: center;
   line-height: normal;
   position: relative;
-  left: 100px;
-  top: 20px;
 }
 
 .modal-button2{
@@ -881,12 +880,11 @@ tr:nth-child(odd) td {
   box-sizing: border-box;
   font-family: 'Montserrat-Medium', 'Montserrat Medium', 'Montserrat', sans-serif;
   font-weight: 500;
+  font-size: 13px;
   color: #a10014;
   text-align: center;
   line-height: normal;
   position: relative;
-  right: 130px;
-  top: -12px;
 }
 
 .modal-button3{
