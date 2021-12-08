@@ -31,10 +31,10 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/img/normal_u25.jpg");
+  background-image: url("../assets/img/normal_u25.jpg");
   background-repeat: no-repeat;
   background-size: 1391px 737px;
-  width: 1391px; 
+  width: 1391px;
   height: 723px;
 }
 
@@ -56,7 +56,7 @@ header {
 }
 
 .header--img2{
-  width:75px; 
+  width:75px;
   height:73px;
   margin-top: 3px;
   margin-right: 10px;
@@ -84,7 +84,7 @@ header {
   align-items: center;
   justify-content: center;
   width:144px;
-  height: 32px; 
+  height: 32px;
   background-color: #6b6b6b;
   font-family: 'Raleway-Regular', 'Raleway', sans-serif;
   color: #f2f2f2;
@@ -260,7 +260,7 @@ main{
 .img--enterprise{
   width: 250px;
   height: 170px;
-}   
+}
 
 .content1--score{
   position: relative;
@@ -299,13 +299,13 @@ main{
   position: relative;
   font-family: FontAwesome;
   }
-  
+
 .stars-outer::before {
   content: "\f006   \f006   \f006   \f006   \f006";
   color: #A42915;
   font-size: 17px;
   }
-  
+
 .stars-inner {
   position: absolute;
   top: 0;
@@ -314,13 +314,13 @@ main{
   overflow: hidden;
   width: 0;
   }
-  
+
 .stars-inner::before {
   content: "\f005   \f005   \f005   \f005   \f005";
   color: #A42915;
    font-size: 17px;
   }
-  
+
   /*.attribution {
   font-size: 12px;
   color: #A42915;
@@ -560,7 +560,7 @@ hr.line-title2{
   top: 18px;
 }
 
-.modal--container{  
+.modal--container{
   display: flex;
   position:absolute;
   justify-content: center;
@@ -714,12 +714,12 @@ footer {
   position: absolute;
   left: 30px;
   top: 17px;
-  width: 100px; 
+  width: 100px;
   height: 29px;
 }
 
 .footer-img1{
-  width: 100px; 
+  width: 100px;
   height: 29px;
 }
 
