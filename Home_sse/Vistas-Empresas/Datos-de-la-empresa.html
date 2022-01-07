@@ -9,6 +9,7 @@
 
 <body>
     <header>
+    <!--Inicio del titulo-->
         <figure>
             <img src="../assets/img/u26.png" class="header--img1" alt="" />
         </figure>
@@ -18,40 +19,43 @@
         <figure>
           <img src="../assets/img/u43.png" class="header--img2" alt="" />
         </figure>
+      <!--Fin titulo -->
     </header>
-<center>  
+<center>
+  <!--Inicio del menu de navegacion de cada vista-->
 <div>
-  
   <ul class="menu">
   <li class="active"><a class="texto-menu" href="#">Datos de la Empresa</a></li>
   <li><a class="texto-menu" href="Datos-de-la-empresa-Ofertas-Laborales.html">Ofertas Laborales</a></li>
   <li class="icon"><img src="../assets/icons/u18.svg" class="icon--settings"></li>
   <li class=" icon">  <img src="../assets/icons/u11.svg" class="icon--question"></li>
   <li class="icon"><img src="../assets/img/u462.PNG" class="icon--profile"></li>
-  
-     
   </ul>
-
- 
     </div>
+  <!--fin del menu de navegacion-->
 </center>
     <main>
+    <!--Inicio de la seccion del contenido de los datos-->
       <section class="main--section">
-        
+         <!--Inicio del titulo-->
         <div class="main--title">
           <p>Datos de la empresa</p>
-
         </div>
+         <!--fin del titulo-->
+          <!--Inicio de la linea de separacion entre las dos secciones-->
         <div>
         <hr class="line-title1">
         </div>
-
+         <!--fin de la linea de separacion-->
         <div class="main--content">
+           <!--Inicio del contenido izquierdo de la pagina (imagen, mensajes,comentarios y calificacion-->
           <div class="content1">
+            <!--Inicio imagen-->
             <div class="content1--img">
               <img src="../assets/img/cemex.png" class="img--enterprise" alt="" />
             </div>
-            
+<!--Fin imagen-->
+<!--Inicio mensajes de cordinacioo-->
             <div class="content1--mensajes">
               <div>
               <p>Mensaje de la cordinacion</p>
@@ -60,7 +64,7 @@
                 <table >
                 <tr>
                   <input type="text" name="estado" id="content1--estado" placeholder=" Estado de la oferta, Ingeníero …">
-                </tr> 
+                </tr>
                 <tr>
                   <input type="text" name="actualizacion" id="content1--actualizacion" placeholder=" Actualización de datos" >
                 </tr>
@@ -70,7 +74,8 @@
                 <a href="#modal-coordi"> <span class="content1--more_mensajes-text"> Ver mas mensajes</span></a>
               </div>
             </div>
-
+<!--Fin de los mensajes de cordinacion-->
+<!--Inicio calificacion y comentarios-->
             <div class="content1--score">
               <div class="score-calification">
                 <p>Calificación:</p>
@@ -97,8 +102,11 @@
                 <a href="#modal"> <span class="content1--more_coments-text"> Ver mas comentarios</span></a>
               </div>
             </div>
+       <!--Fin calificacion y comentarios-->
           </div>
-         
+<!--Fin del contenido izquierdo de la pagina (imagen, mensajes,comentarios y calificacion-->
+
+ <!--Inicio del contenido derecho de la pagina (Datos de la empresa y datos de contacto-->
           <div class="content2">
             <div class="content2--information">
               <div class="content2--information-title1">
@@ -106,8 +114,8 @@
 
                   <hr class="line-title2">
                </div>
-                
-            
+
+
               <diV class="content2--information-text1">
                 <p>Nombre de la empresa  <input type="text" class="content2--information-texto1" name="nombre" placeholder=" CEMEX" readonly="readonly"></p>
                 <p>Correo electronico <input type="text" class="content2--information-texto1" name="correo" placeholder=" cemex@cemex.com.mx" readonly="readonly"></p>
@@ -128,15 +136,15 @@
             <div class="content2--description">
               <div class="content2--description-title">
                 <p>Descripción de la empresa</p>
-              
+
               </div>
               <div class="content2--description-text">
                 <p>
                   Nuestra compañía fue fundada en Monterrey, México, en 1906. Empezamos como una empresa
                   local y, gracias a nuestra visión, evolucionamos hasta convertirnos en una de las compañías
-                  globales líderes en nuestra industria. Ahora contamos con el apoyo de cerca de 43 mil 
+                  globales líderes en nuestra industria. Ahora contamos con el apoyo de cerca de 43 mil
                   colaboradores en todo el mundo. Mantenemos relaciones comerciales con más de cien países y
-                  una red de operaciones con más de cincuenta naciones en la que se produce, distribuye y 
+                  una red de operaciones con más de cincuenta naciones en la que se produce, distribuye y
                   comercializa cemento, concreto premezclado, agregados y productos relacionados.
                 </p>
               </div>
@@ -149,9 +157,9 @@
               </div>
               <diV class="content2--datos--direccion">
                 <p>Direccion de la empresa</p>
-               </diV> 
+               </diV>
               <diV class="content2--datos--text1">
-                
+
                 <p>Calle:<input type="text" class="content2--information-texto1" name="ubicacion" placeholder=" Calle" readonly="readonly"> </p>
                 <p>Colonia:<input type="text" class="content2--information-texto1" name="ubicacion" placeholder=" Colonia" readonly="readonly"> </p>
                 <p>Numero/piso:<input type="text" class="content2--information-texto2" name="ubicacion" placeholder=" Número/Piso" readonly="readonly"> </p>
@@ -166,12 +174,15 @@
               <div>
                 <hr >
               </div>
-              
+
 
           </div>
         </div>
+    <!--Fin del contenido derecho de la pagina (Datos de la empresa y datos de contacto-->
       </section>
+   <!--Inicio de la seccion del contenido de los datos-->
     </main>
+ <!--inicio del footer que es la tercera seccion-->
     <footer>
       <div class="footer--div1-img">
       <img src="../assets/img/u26.png" class="footer-img1"  alt="">
@@ -214,7 +225,9 @@
       </div>
       </div>
     </footer>
-    
+<!--Fin del footer que es la tercera seccion-->
+
+<!--inicio de la ventana sobre los mensajes de coordinacion-->
     <aside id="modal-coordi" class="modal--container">
       <div class="content-modal">
         <div class="modal--title">
@@ -255,12 +268,12 @@
           </table>
         </div>
         <div class="modal--container-buttons">
-         <a href="#" class="modal-button1"> <span class="modal-button1-text">Cerrar</span></a>  
+         <a href="#" class="modal-button1"> <span class="modal-button1-text">Cerrar</span></a>
         </div>
       </div>
     </aside>
-
-
+<!--Fin de la ventana sobre los mensajes de coordinacion-->
+<!--inicio de la ventana sobre los comentarios-->
     <aside id="modal" class="modal--container">
       <div class="content-modal">
         <div class="modal--title">
@@ -301,24 +314,22 @@
           </table>
         </div>
         <div class="modal--container-buttons">
-         <a href="#" class="modal-button1"> <span class="modal-button1-text">Cerrar</span></a>  
+         <a href="#" class="modal-button1"> <span class="modal-button1-text">Cerrar</span></a>
         </div>
       </div>
     </aside>
-    
+<!--fin de la ventana sobre los comentarios-->
+<!--Inicio de calificacion de estrellas-->
     <script>
      const ratings = {
       score1 : 3.5,
-      
       };
-      
-      // total number of stars
       const starTotal = 5;
-      
-      for(const rating in ratings) {  
+
+      for(const rating in ratings) {
       const starPercentage = (ratings[rating] / starTotal) * 100;
       const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-      document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded; 
+      document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded;
       }
     </script>
 </body>
